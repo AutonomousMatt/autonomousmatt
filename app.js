@@ -5,9 +5,18 @@ async function ask() {
 
   const file = "/rope.txt";
 
-  try {
-    const res = await fetch(file);
-    const archiveText = await res.text();
+try {
+  const res = await fetch(file);
+  console.log("Fetch status:", res.status);
+  if (!res.ok) {
+    throw new Error("Failed to fetch file");
+  }
+  const archiveText = await res.text();
+  console.log("Archive loaded:", archiveText.slice(0, 100));
+} catch (err) {
+  responseEl.textContent = "Error loading archive content.";
+  console.error("Fetch error:", err);
+}
 
     const gptRes = await fetch("/api/gpt", {
       method: "POST",
