@@ -1,11 +1,12 @@
 const history = [];
 
 async function ask() {
-  const prompt = document.getElementById("prompt").value.toLowerCase();
+  const promptInput = document.getElementById("prompt");
+  const prompt = promptInput.value.trim().toLowerCase();
   const responseContainer = document.getElementById("response-container");
+  promptInput.value = "";
 
-  // Clear input
-  document.getElementById("prompt").value = "";
+  if (!prompt) return;
 
   // Keyword-to-file mapping
   const keywordMap = {
@@ -13,55 +14,82 @@ async function ask() {
     "hitchcock": ["/rope.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
-    // Add more as needed
+    // Add more keyword → file list mappings as needed
   };
 
-  let matchedFiles = [];
+  // Score file relevance
+  const scores = {};
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
-      matchedFiles.push(...keywordMap[keyword]);
+      keywordMap[keyword].forEach(file => {
+        scores[file] = (scores[file] || 0) + 1;
+      });
     }
   }
 
-  if (matchedFiles.length === 0) {
-    matchedFiles = ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
-  }
+  const rankedFiles = Object.entries(scores)
+    .sort((a, b) => b[1] - a[1])
+    .map(entry => entry[0]);
 
-  // Show thinking block
+  const matchedFiles = rankedFiles.length > 0
+    ? rankedFiles
+    : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
+
+  // Create a response block
   const block = document.createElement("div");
   block.className = "response-block";
-  block.innerHTML = "<em>Thinking...</em>";
+
+  // Add user question as header
+  const header = document.createElement("h3");
+  header.textContent = prompt.charAt(0).toUpperCase() + prompt.slice(1);
+  block.appendChild(header);
+
+  // Add animated "Matt is thinking..." placeholder
+  const body = document.createElement("div");
+  body.id = "thinking";
+  body.textContent = "Matt is thinking";
+  block.appendChild(body);
   responseContainer.appendChild(block);
-  block.scrollIntoView({ behavior: "smooth" });
+
+  // Animate dots while thinking
+  let dotCount = 0;
+  const thinkingInterval = setInterval(() => {
+    dotCount = (dotCount + 1) % 4;
+    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
+  }, 400);
 
   try {
+    // Load archive text
     const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
     const archiveTexts = await Promise.all(archivePromises);
     const archiveText = archiveTexts.join("\n\n");
 
+    // Send prompt and archive to GPT
     const gptRes = await fetch("/api/gpt", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt, archive: archiveText })
     });
 
+    clearInterval(thinkingInterval);
+
     const json = await gptRes.json();
     const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
 
-    block.innerHTML = marked.parse(reply);
+    body.innerHTML = marked.parse(reply);
 
-    // Add source file citation
-    const sourceNote = document.createElement("div");
-    sourceNote.className = "source";
-    sourceNote.textContent = "Source: " + matchedFiles.map(f => f.replace("/", "").replace(".txt", "")).join(", ");
-    block.appendChild(sourceNote);
+    // Add inline source citation
+    const source = document.createElement("div");
+    source.className = "source";
+    source.textContent = "Source: " + matchedFiles.map(f => f.replace("/", "").replace(".txt", "")).join(", ");
+    block.appendChild(source);
 
     block.classList.add("show");
-    block.scrollIntoView({ behavior: "smooth" });
 
     history.push({ prompt, reply });
   } catch (err) {
-    block.innerHTML = "Error loading archive or generating response.";
+    clearInterval(thinkingInterval);
+    body.innerHTML = "Error loading archive or generating response.";
     console.error("Error:", err);
   }
 }
