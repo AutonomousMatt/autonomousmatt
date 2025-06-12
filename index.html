@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
       body {
         font-family: 'Roboto', sans-serif;
-        background-color: #f4c542; /* Match background from autonomousmatt.com */
+        background-color: #f4c542;
         color: #111;
         max-width: 700px;
         margin: 0 auto;
@@ -44,9 +45,8 @@
         transform: scale(1.02);
       }
 
-      #response {
-        margin-top: 30px;
-        background: #f4c542; /* Yellow accent from autonomousmatt.com */
+      .response-block {
+        background: #f4c542;
         padding: 20px;
         border-left: 4px solid #222;
         border-radius: 6px;
@@ -54,73 +54,29 @@
         white-space: pre-wrap;
         font-size: 16px;
         text-align: left;
+        margin-top: 30px;
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.4s ease, transform 0.4s ease;
       }
 
-      #response.show {
+      .response-block.show {
         opacity: 1;
         transform: translateY(0);
       }
+
+      .source {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #444;
+      }
     </style>
   </head>
-
   <body>
     <textarea id="prompt" placeholder="Ask me anything..." rows="4" cols="50" autofocus></textarea>
     <br />
     <button onclick="ask()">Ask</button>
-    <div id="response"></div>
-
-    <script>
-      function typeText(element, text, speed = 20) {
-        element.textContent = "";
-        let index = 0;
-        function type() {
-          if (index < text.length) {
-            element.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, speed);
-          }
-        }
-        type();
-      }
-
-      async function ask() {
-        const prompt = document.getElementById("prompt").value;
-        const responseEl = document.getElementById("response");
-        responseEl.classList.remove("show");
-        responseEl.textContent = "Thinking...";
-
-        const file = "/rope.txt"; // Swap this with your dynamic file logic if needed
-
-        try {
-          const res = await fetch(file);
-          const archiveText = await res.text();
-
-          const gptRes = await fetch("/api/gpt", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ prompt, archive: archiveText })
-          });
-
-          const json = await gptRes.json();
-          const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
-
-          responseEl.textContent = "";
-          responseEl.classList.add("show");
-          typeText(responseEl, reply, 20);
-        } catch (err) {
-          responseEl.textContent = "Error loading archive or generating response.";
-          console.error("Error:", err);
-        }
-      }
-
-      // Resize iframe height on response render
-      const resizeObserver = new ResizeObserver(() => {
-        window.parent?.postMessage({ type: "resize", height: document.body.scrollHeight }, "*");
-      });
-      resizeObserver.observe(document.body);
-    </script>
+    <div id="response-container"></div>
+    <script src="app.js"></script>
   </body>
 </html>
