@@ -14,7 +14,7 @@ async function ask() {
     "hitchcock": ["/rope.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
-    // Add more keyword → file list mappings as needed
+    // Add more mappings
   };
 
   // Score file relevance
@@ -35,23 +35,22 @@ async function ask() {
     ? rankedFiles
     : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
 
-  // Create a response block
+  // Create response block
   const block = document.createElement("div");
   block.className = "response-block";
 
-  // Add user question as header
   const header = document.createElement("h3");
   header.textContent = prompt.charAt(0).toUpperCase() + prompt.slice(1);
   block.appendChild(header);
 
-  // Add animated "Matt is thinking..." placeholder
   const body = document.createElement("div");
-  body.id = "thinking";
   body.textContent = "Matt is thinking";
   block.appendChild(body);
-  responseContainer.appendChild(block);
 
-  // Animate dots while thinking
+  responseContainer.appendChild(block);
+  block.scrollIntoView({ behavior: "smooth", block: "end" });
+
+  // Start dot animation
   let dotCount = 0;
   const thinkingInterval = setInterval(() => {
     dotCount = (dotCount + 1) % 4;
@@ -59,12 +58,11 @@ async function ask() {
   }, 400);
 
   try {
-    // Load archive text
+    // Load and join archive text
     const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
     const archiveTexts = await Promise.all(archivePromises);
     const archiveText = archiveTexts.join("\n\n");
 
-    // Send prompt and archive to GPT
     const gptRes = await fetch("/api/gpt", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -75,21 +73,20 @@ async function ask() {
 
     const json = await gptRes.json();
     const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
-
     body.innerHTML = marked.parse(reply);
 
-    // Add inline source citation
     const source = document.createElement("div");
     source.className = "source";
     source.textContent = "Source: " + matchedFiles.map(f => f.replace("/", "").replace(".txt", "")).join(", ");
     block.appendChild(source);
 
     block.classList.add("show");
+    block.scrollIntoView({ behavior: "smooth", block: "end" });
 
     history.push({ prompt, reply });
   } catch (err) {
     clearInterval(thinkingInterval);
-    body.innerHTML = "Error loading archive or generating response.";
+    body.textContent = "Error loading archive or generating response.";
     console.error("Error:", err);
   }
 }
