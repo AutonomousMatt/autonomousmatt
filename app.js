@@ -4,6 +4,7 @@ async function ask() {
   responseEl.textContent = "Thinking...";
 
   const file = "/rope.txt";
+  const file = "/grasp-the-nettle-baron-munchausen.txt";
 
   try {
     const res = await fetch(file);
