@@ -3,11 +3,12 @@
   <head>
     <title>AutonomousMatt</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <style>
       body {
-        font-family: 'Roboto', system-ui, sans-serif;
-        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f5ed; /* Match background from autonomousmatt.com */
         color: #111;
         max-width: 700px;
         margin: 0 auto;
@@ -26,20 +27,26 @@
       }
 
       button {
-        margin-top: 12px;
-        padding: 16px 32px;
-        font-size: 18px;
+        margin-top: 20px;
+        padding: 20px 40px;
+        font-size: 20px;
         font-weight: 600;
         background-color: black;
         color: white;
         border: none;
-        border-radius: 6px;
+        border-radius: 8px;
         cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #222;
+        transform: scale(1.02);
       }
 
       #response {
         margin-top: 30px;
-        background: #fff6b0; /* autonomousmatt.com yellow tone */
+        background: #fff6b0; /* Yellow accent from autonomousmatt.com */
         padding: 20px;
         border-left: 4px solid #222;
         border-radius: 6px;
@@ -47,14 +54,73 @@
         white-space: pre-wrap;
         font-size: 16px;
         text-align: left;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+      }
+
+      #response.show {
+        opacity: 1;
+        transform: translateY(0);
       }
     </style>
   </head>
+
   <body>
     <textarea id="prompt" placeholder="Ask me anything..." rows="4" cols="50" autofocus></textarea>
     <br />
     <button onclick="ask()">Ask</button>
     <div id="response"></div>
-    <script src="app.js"></script>
+
+    <script>
+      function typeText(element, text, speed = 20) {
+        element.textContent = "";
+        let index = 0;
+        function type() {
+          if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+          }
+        }
+        type();
+      }
+
+      async function ask() {
+        const prompt = document.getElementById("prompt").value;
+        const responseEl = document.getElementById("response");
+        responseEl.classList.remove("show");
+        responseEl.textContent = "Thinking...";
+
+        const file = "/rope.txt"; // Swap this with your dynamic file logic if needed
+
+        try {
+          const res = await fetch(file);
+          const archiveText = await res.text();
+
+          const gptRes = await fetch("/api/gpt", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ prompt, archive: archiveText })
+          });
+
+          const json = await gptRes.json();
+          const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
+
+          responseEl.textContent = "";
+          responseEl.classList.add("show");
+          typeText(responseEl, reply, 20);
+        } catch (err) {
+          responseEl.textContent = "Error loading archive or generating response.";
+          console.error("Error:", err);
+        }
+      }
+
+      // Resize iframe height on response render
+      const resizeObserver = new ResizeObserver(() => {
+        window.parent?.postMessage({ type: "resize", height: document.body.scrollHeight }, "*");
+      });
+      resizeObserver.observe(document.body);
+    </script>
   </body>
 </html>
