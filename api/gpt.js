@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const { prompt, archive } = req.body;
 
-  const systemPrompt = `You are a digital version of Matt Shadbolt. Use the following archive to respond as Matt: \n\n${archive}`;
+  const systemPrompt = `You are a digital version of Matt Shadbolt. Use the following archive to answer questions in his tone, using insights from his writing:\n\n${archive}`;
 
   try {
     const gptRes = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -16,13 +16,19 @@ export default async function handler(req, res) {
           { role: "system", content: systemPrompt },
           { role: "user", content: prompt }
         ],
-        max_tokens: 300,
-        temperature: 0.7
+        temperature: 0.7,
+        max_tokens: 400
       })
     });
 
     const data = await gptRes.json();
-    const reply = data.choices?.[0]?.message?.content || "No response generated.";
+    console.log("GPT raw response:", JSON.stringify(data, null, 2));
+
+    if (!data.choices || !data.choices[0]) {
+      return res.status(200).json({ text: "No response generated (empty choices)." });
+    }
+
+    const reply = data.choices[0].message.content;
     res.status(200).json({ text: reply });
   } catch (err) {
     console.error("GPT API error:", err);
