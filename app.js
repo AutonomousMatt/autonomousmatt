@@ -14,7 +14,7 @@ async function ask() {
     "hitchcock": ["/rope.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
-    // Add more mappings
+    // Add more as needed
   };
 
   // Score file relevance
@@ -44,21 +44,25 @@ async function ask() {
   block.appendChild(header);
 
   const body = document.createElement("div");
-  body.textContent = "Matt is thinking";
+  body.id = "thinking-text";
   block.appendChild(body);
 
-  responseContainer.appendChild(block);
-  block.scrollIntoView({ behavior: "smooth", block: "end" });
+  // Insert block at the top
+  if (responseContainer.firstChild) {
+    responseContainer.insertBefore(block, responseContainer.firstChild);
+  } else {
+    responseContainer.appendChild(block);
+  }
 
-  // Start dot animation
+  // Typewriter-style dot animation
   let dotCount = 0;
+  let typingText = "Matt is thinking";
   const thinkingInterval = setInterval(() => {
     dotCount = (dotCount + 1) % 4;
-    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
+    body.textContent = typingText + ".".repeat(dotCount);
   }, 400);
 
   try {
-    // Load and join archive text
     const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
     const archiveTexts = await Promise.all(archivePromises);
     const archiveText = archiveTexts.join("\n\n");
@@ -81,9 +85,8 @@ async function ask() {
     block.appendChild(source);
 
     block.classList.add("show");
-    block.scrollIntoView({ behavior: "smooth", block: "end" });
 
-    history.push({ prompt, reply });
+    history.unshift({ prompt, reply }); // Push to top of history
   } catch (err) {
     clearInterval(thinkingInterval);
     body.textContent = "Error loading archive or generating response.";
