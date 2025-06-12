@@ -3,7 +3,7 @@ async function ask() {
   const responseEl = document.getElementById("response");
   responseEl.textContent = "Thinking...";
 
-  const file = "rope.txt";
+  const file = "rope2.txt";
 
   try {
     const res = await fetch(file);
