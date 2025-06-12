@@ -3,20 +3,16 @@ async function ask() {
   const responseEl = document.getElementById("response");
   responseEl.textContent = "Thinking...";
 
-  const file = "/rope.txt";
+  try {
+    const res = await fetch("/rope.txt");
+    console.log("Fetch status:", res.status);
 
-try {
-  const res = await fetch(file);
-  console.log("Fetch status:", res.status);
-  if (!res.ok) {
-    throw new Error("Failed to fetch file");
-  }
-  const archiveText = await res.text();
-  console.log("Archive loaded:", archiveText.slice(0, 100));
-} catch (err) {
-  responseEl.textContent = "Error loading archive content.";
-  console.error("Fetch error:", err);
-}
+    if (!res.ok) {
+      throw new Error("Failed to fetch rope.txt");
+    }
+
+    const archiveText = await res.text();
+    console.log("Archive contents:", archiveText.slice(0, 100));
 
     const gptRes = await fetch("/api/gpt", {
       method: "POST",
@@ -28,6 +24,6 @@ try {
     responseEl.textContent = json.text?.trim() || "I need more to go on...";
   } catch (err) {
     responseEl.textContent = "Error loading archive content.";
-    console.error(err);
+    console.error("Fetch error:", err);
   }
 }
