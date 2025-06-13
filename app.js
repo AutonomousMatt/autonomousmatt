@@ -13,7 +13,7 @@ async function ask() {
     "rope": ["/film_rope.txt"],
     "hitchcock": ["/film_rope.txt"],
     "kes": ["/film_kes.txt"],
-    "loach": ["/film_cathy-come-home.txt"],
+    "cathy": ["/film_cathy-come-home.txt"],
     "munchausen": ["/film_baron-munchausen.txt"],
     "napoleon": ["/film_napoleon.txt"]
   };
