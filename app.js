@@ -10,11 +10,11 @@ async function ask() {
 
   // Keyword-to-file mapping
   const keywordMap = {
-    "rope": ["/rope.txt"],
-    "hitchcock": ["/rope.txt"],
-    "kes": ["/kes.txt"],
-    "munchausen": ["/baron-munchausen.txt"],
-    "napoleon": ["/napoleon.txt"]
+    "rope": ["/film_rope.txt"],
+    "hitchcock": ["/film_rope.txt"],
+    "kes": ["/film_kes.txt"],
+    "munchausen": ["/film_baron-munchausen.txt"],
+    "napoleon": ["/film_napoleon.txt"]
   };
 
   // Score file relevance
@@ -33,7 +33,7 @@ async function ask() {
 
   const matchedFiles = rankedFiles.length > 0
     ? rankedFiles
-    : ["/rope.txt", "/baron-munchausen.txt", "/napoleon.txt", "/kes.txt"];
+    : ["/film_rope.txt", "/film_baron-munchausen.txt", "/film_napoleon.txt", "/film_kes.txt"];
 
   // Create response block
   const block = document.createElement("div");
