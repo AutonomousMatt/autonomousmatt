@@ -8,7 +8,7 @@ async function ask() {
 
   if (!prompt) return;
 
-  // Keyword-to-file mapping
+  // Keyword-to-file mapping (flat, no scoring)
   const keywordMap = {
     "rope": ["/film_rope.txt"],
     "criticism": ["/film_rope.txt"],
@@ -35,14 +35,13 @@ async function ask() {
     "napoleon": ["/film_napoleon.txt"]
   };
 
-  // Flat match, no ranking
+  // Match files
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
       matchedFiles.push(...keywordMap[keyword]);
     }
   }
-
   matchedFiles = [...new Set(matchedFiles)];
 
   if (matchedFiles.length === 0) {
@@ -55,7 +54,7 @@ async function ask() {
     ];
   }
 
-  // Build response block
+  // Create and insert block
   const block = document.createElement("div");
   block.className = "response-block";
 
@@ -65,21 +64,16 @@ async function ask() {
 
   const body = document.createElement("div");
   body.id = "thinking-text";
-  body.textContent = "Matt is thinking";
+  body.textContent = "Matt is thinking...";
   block.appendChild(body);
 
-  const dots = document.createElement("span");
-  dots.className = "dots";
-  body.appendChild(dots);
-
-  // Add response block to top
   responseContainer.prepend(block);
 
-  // Animate dots (💡 Ensure it runs visibly until GPT returns)
+  // Start loading dots animation
   let dotCount = 0;
   const thinkingInterval = setInterval(() => {
-    dots.textContent = ".".repeat(dotCount % 4);
-    dotCount++;
+    dotCount = (dotCount + 1) % 4;
+    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
   }, 400);
 
   try {
@@ -96,26 +90,24 @@ async function ask() {
     clearInterval(thinkingInterval);
 
     const json = await gptRes.json();
-    const reply = json.text?.trim();
+    const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
 
-    if (reply) {
-      body.innerHTML = marked.parse(reply);
+    // Render GPT response cleanly
+    body.innerHTML = marked.parse(reply);
 
-      const sourceURL = extractFirstSourceUrl(archiveTexts);
-      if (sourceURL) {
-        const link = document.createElement("a");
-        link.href = sourceURL;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = "Read full piece →";
-        link.style.display = "block";
-        link.style.marginTop = "10px";
-        link.style.fontSize = "14px";
-        link.style.fontWeight = "500";
-        block.appendChild(link);
-      }
-    } else {
-      body.textContent = "No response generated.";
+    // Add link if `source:` exists in any loaded file
+    const sourceURL = extractFirstSourceUrl(archiveTexts);
+    if (sourceURL) {
+      const link = document.createElement("a");
+      link.href = sourceURL;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Read full piece →";
+      link.style.display = "block";
+      link.style.marginTop = "10px";
+      link.style.fontSize = "14px";
+      link.style.fontWeight = "500";
+      block.appendChild(link);
     }
 
     block.classList.add("show");
