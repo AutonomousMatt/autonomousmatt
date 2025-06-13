@@ -18,6 +18,13 @@ async function ask() {
     "memory": ["/film_blue.txt"],
     "london": ["/film_blue.txt"],
     "gay": ["/film_blue.txt"],
+    "nostalgia": ["/film_virgin-suicides.txt"],
+    "suicide": ["/film_virgin-suicides.txt"],
+    "coppola": ["/film_virgin-suicides.txt"],
+    "sofia": ["/film_virgin-suicides.txt"],
+    "isolation": ["/film_virgin-suicides.txt"],
+    "teenage": ["/film_virgin-suicides.txt"],
+    "sisters": ["/film_virgin-suicides.txt"],
     "missionary": ["/film_godland.txt"],
     "palmason": ["/film_godland.txt"],
     "religion": ["/film_godland.txt"],
@@ -106,6 +113,7 @@ async function ask() {
       "/film_plan-75.txt",
       "/film_godland.txt",
       "/film_long-good-friday.txt",
+      "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
       "/film_kes.txt"
     ];
