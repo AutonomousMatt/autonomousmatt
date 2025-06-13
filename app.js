@@ -32,7 +32,16 @@ async function ask() {
     "army": ["/film_napoleon.txt"],
     "soldier": ["/film_napoleon.txt"],
     "war": ["/film_napoleon.txt"],
-    "napoleon": ["/film_napoleon.txt"]
+    "napoleon": ["/film_napoleon.txt"],
+    "peace": ["/film_war-and-peace.txt"],
+    "russia": ["/film_war-and-peace.txt"],
+    "tolstoy": ["/film_war-and-peace.txt"],
+    "bondarchuk": ["/film_war-and-peace.txt"],
+    "epic": ["/film_war-and-peace.txt"],
+    "military": ["/film_war-and-peace.txt"],
+    "history": ["/film_war-and-peace.txt"],
+    "army": ["/film_war-and-peace.txt"],
+    "war": ["/film_war-and-peace.txt"]
   };
 
   // Match files
@@ -49,6 +58,7 @@ async function ask() {
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
       "/film_napoleon.txt",
+      "/film_war-and-peace.txt",
       "/film_cathy-come-home.txt",
       "/film_kes.txt"
     ];
