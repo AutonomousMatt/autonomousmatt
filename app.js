@@ -35,7 +35,7 @@ async function ask() {
     "napoleon": ["/film_napoleon.txt"]
   };
 
-  // Flat matching — no scoring, just gather files
+  // Flat match, no ranking
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
@@ -43,10 +43,8 @@ async function ask() {
     }
   }
 
-  // Remove duplicates
   matchedFiles = [...new Set(matchedFiles)];
 
-  // Fallback to all files if no match
   if (matchedFiles.length === 0) {
     matchedFiles = [
       "/film_rope.txt",
@@ -57,7 +55,7 @@ async function ask() {
     ];
   }
 
-  // Create response block
+  // Build response block
   const block = document.createElement("div");
   block.className = "response-block";
 
@@ -68,24 +66,19 @@ async function ask() {
   const body = document.createElement("div");
   body.id = "thinking-text";
   body.textContent = "Matt is thinking";
-  const dotSpan = document.createElement("span");
-  dotSpan.className = "dots";
-  dotSpan.innerHTML = "<span>.</span><span>.</span><span>.</span>";
-  body.appendChild(dotSpan);
   block.appendChild(body);
 
-  // Insert block at the top
-  if (responseContainer.firstChild) {
-    responseContainer.insertBefore(block, responseContainer.firstChild);
-  } else {
-    responseContainer.appendChild(block);
-  }
+  const dots = document.createElement("span");
+  dots.className = "dots";
+  body.appendChild(dots);
 
-  // Animate dots manually
+  // Add response block to top
+  responseContainer.prepend(block);
+
+  // Animate dots (💡 Ensure it runs visibly until GPT returns)
   let dotCount = 0;
   const thinkingInterval = setInterval(() => {
-    const dots = ".".repeat(dotCount % 4);
-    body.childNodes[0].textContent = "Matt is thinking" + dots;
+    dots.textContent = ".".repeat(dotCount % 4);
     dotCount++;
   }, 400);
 
@@ -103,22 +96,26 @@ async function ask() {
     clearInterval(thinkingInterval);
 
     const json = await gptRes.json();
-    const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
-    body.innerHTML = marked.parse(reply);
+    const reply = json.text?.trim();
 
-    // Pull the first matching source URL from frontmatter
-    const url = extractFirstSourceUrl(archiveTexts);
-    if (url) {
-      const link = document.createElement("a");
-      link.href = url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Read full piece →";
-      link.style.display = "block";
-      link.style.marginTop = "10px";
-      link.style.fontSize = "14px";
-      link.style.fontWeight = "500";
-      block.appendChild(link);
+    if (reply) {
+      body.innerHTML = marked.parse(reply);
+
+      const sourceURL = extractFirstSourceUrl(archiveTexts);
+      if (sourceURL) {
+        const link = document.createElement("a");
+        link.href = sourceURL;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Read full piece →";
+        link.style.display = "block";
+        link.style.marginTop = "10px";
+        link.style.fontSize = "14px";
+        link.style.fontWeight = "500";
+        block.appendChild(link);
+      }
+    } else {
+      body.textContent = "No response generated.";
     }
 
     block.classList.add("show");
@@ -130,7 +127,6 @@ async function ask() {
   }
 }
 
-// Extract first `source:` URL from any text block
 function extractFirstSourceUrl(textBlocks) {
   for (const block of textBlocks) {
     const match = block.match(/source:\s*(https?:\/\/[^\s]+)/i);
