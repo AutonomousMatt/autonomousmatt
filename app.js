@@ -19,6 +19,11 @@ async function ask() {
     "london": ["/film_blue.txt"],
     "gay": ["/film_blue.txt"],
     "rope": ["/film_rope.txt"],
+    "gangster": ["/film_long-good-friday.txt"],
+    "hoskins": ["/film_long-good-friday.txt"],
+    "london": ["/film_long-good-friday.txt"],
+    "british": ["/film_long-good-friday.txt"],
+    "crime": ["/film_long-good-friday.txt"],
     "criticism": ["/film_rope.txt"],
     "suspense": ["/film_rope.txt"],
     "hitchcock": ["/film_rope.txt"],
@@ -69,6 +74,7 @@ async function ask() {
       "/film_napoleon.txt",
       "/film_war-and-peace.txt",
       "/film_cathy-come-home.txt",
+      "/film_long-good-friday.txt",
       "/film_kes.txt"
     ];
   }
