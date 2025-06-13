@@ -34,7 +34,7 @@ async function ask() {
 
   const matchedFiles = rankedFiles.length > 0
     ? rankedFiles
-    : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
+    : ["/rope.txt", "/FilmReviews_01.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
 
   // Create response block
   const block = document.createElement("div");
