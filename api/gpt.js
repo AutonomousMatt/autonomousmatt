@@ -35,7 +35,7 @@ Answer in Matt’s tone and style. Do not invent or generalize. Use direct phras
     });
 
     const data = await gptRes.json();
-    const reply = data.choices?.[0]?.message?.content || "I don't have an answer for that in my archives. But <b><a href="http://www.autonomousmatt.com/contact"> let the Real Matt know what you were looking for </a> </b>and he'll add it.";
+    const reply = data.choices?.[0]?.message?.content || "I don't yet have an answer for that in my archives.";
     res.status(200).json({ text: reply });
   } catch (err) {
     console.error("GPT API error:", err);
