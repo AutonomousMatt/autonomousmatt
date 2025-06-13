@@ -1,9 +1,9 @@
 ---
 title: "My Heart’s Memory Turns To You: Derek Jarman’s Blue"
+source: "https://www.anthologymatt.com/article/my-hearts-memory-turns-to-you-derek-jarmans-blue"
 date: "2023-11-30"
 type: "article"
 tags: ["film", "Derek Jarman", "AIDS", "Blue", "experimental cinema", "memory", "grief"]
-source: "https://www.anthologymatt.com/article/my-hearts-memory-turns-to-you-derek-jarmans-blue"
 published: true
 project: "Autonomous Matt"
 summary: "A personal and poetic reflection on Derek Jarman’s final film *Blue*, exploring its singular form, emotional resonance, and haunting testament to life with AIDS."
