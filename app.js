@@ -24,6 +24,8 @@ async function ask() {
     "euthanasia": ["/film_plan-75.txt"],
     "dystopia": ["/film_plan-75.txt"],
     "justice": ["/film_i-daniel-blake.txt"],
+    "daniel": ["/film_i-daniel-blake.txt"],
+    "blake": ["/film_i-daniel-blake.txt"],
     "homeless": ["/film_i-daniel-blake.txt"],
     "loach": ["/film_i-daniel-blake.txt"],
     "austerity": ["/film_i-daniel-blake.txt"],
