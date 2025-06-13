@@ -45,18 +45,6 @@
         transform: scale(1.02);
       }
 
-      .disclaimer {
-        font-size: 10px;
-        color: #333;
-        margin-top: 16px;
-        margin-bottom: 24px;
-      }
-
-      .disclaimer a {
-        color: #111;
-        text-decoration: underline;
-      }
-
       .response-block {
         background: #f4c542;
         padding: 20px;
@@ -82,6 +70,18 @@
         margin-top: 10px;
         color: #444;
       }
+
+      .disclaimer {
+        font-size: 11px;
+        color: #333;
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+
+      .disclaimer a {
+        color: #111;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -89,12 +89,13 @@
     <br />
     <button onclick="ask()">Ask</button>
 
+    <div id="response-container"></div>
+
     <div class="disclaimer">
-      <br><br>Just like the real Matt, AutonomousMatt can make mistakes. <br> <br> Not getting the results you're looking for?
+      <br> <br> Just like the real Matt, AutonomousMatt can make mistakes. <br> <br> Not getting the results you're looking for?
       <a href="https://www.autonomousmatt.com/contact" target="_blank" rel="noopener noreferrer">Reach out</a>.
     </div>
 
-    <div id="response-container"></div>
     <script src="app.js"></script>
   </body>
 </html>
