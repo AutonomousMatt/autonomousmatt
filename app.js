@@ -12,6 +12,7 @@ async function ask() {
   const keywordMap = {
     "rope": ["/rope.txt"],
     "hitchcock": ["/rope.txt"],
+    "kes": ["/kes.txt"],
     "munchausen": ["/baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
   };
@@ -32,7 +33,7 @@ async function ask() {
 
   const matchedFiles = rankedFiles.length > 0
     ? rankedFiles
-    : ["/rope.txt", "/baron-munchausen.txt", "/napoleon.txt"];
+    : ["/rope.txt", "/baron-munchausen.txt", "/napoleon.txt", "/kes.txt"];
 
   // Create response block
   const block = document.createElement("div");
