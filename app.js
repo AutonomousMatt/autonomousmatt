@@ -13,11 +13,10 @@ async function ask() {
     "rope": ["/rope.txt"],
     "hitchcock": ["/rope.txt"],
     "film": ["/FilmReviews_01.txt"],
-"reviews": ["/FilmReviews_01.txt"],
-"movies": ["/FilmReviews_01.txt"],
+    "reviews": ["/FilmReviews_01.txt"],
+    "movies": ["/FilmReviews_01.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
-    // Add more as needed
   };
 
   // Score file relevance
@@ -36,7 +35,7 @@ async function ask() {
 
   const matchedFiles = rankedFiles.length > 0
     ? rankedFiles
- : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt", "/FilmReviews_01.txt"];
+    : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt", "/FilmReviews_01.txt"];
 
   // Create response block
   const block = document.createElement("div");
@@ -66,10 +65,12 @@ async function ask() {
   }, 400);
 
   try {
+    // Load archive text
     const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
     const archiveTexts = await Promise.all(archivePromises);
     const archiveText = archiveTexts.join("\n\n");
 
+    // Send prompt + archive to backend
     const gptRes = await fetch("/api/gpt", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -88,8 +89,7 @@ async function ask() {
     block.appendChild(source);
 
     block.classList.add("show");
-
-    history.unshift({ prompt, reply }); // Push to top of history
+    history.unshift({ prompt, reply });
   } catch (err) {
     clearInterval(thinkingInterval);
     body.textContent = "Error loading archive or generating response.";
