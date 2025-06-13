@@ -11,11 +11,29 @@ async function ask() {
   // Keyword-to-file mapping
   const keywordMap = {
     "rope": ["/film_rope.txt"],
+    "criticism": ["/film_rope.txt"],
+    "suspense": ["/film_rope.txt"],
     "hitchcock": ["/film_rope.txt"],
     "kes": ["/film_kes.txt"],
+    "loach": ["/film_kes.txt"],
+    "manchester": ["/film_kes.txt"],
+    "school": ["/film_kes.txt"],
+    "tragedy": ["/film_kes.txt"],
     "cathy": ["/film_cathy-come-home.txt"],
+    "loach": ["/film_cathy-come-home.txt"],
+    "homeless": ["/film_cathy-come-home.txt"],
+    "realism": ["/film_cathy-come-home.txt"],
     "munchausen": ["/film_baron-munchausen.txt"],
-    "napoleon": ["/film_napoleon.txt"]
+    "gilliam": ["/film_baron-munchausen.txt"],
+    "fantasy": ["/film_baron-munchausen.txt"],
+    "python": ["/film_baron-munchausen.txt"],
+    "history": ["/film_napoleon.txt"],
+    "military": ["/film_napoleon.txt"],
+    "french": ["/film_napoleon.txt"],
+    "army": ["/film_napoleon.txt"],
+    "soldier": ["/film_napoleon.txt"],
+    "war": ["/film_napoleon.txt"],
+  "napoleon": ["/film_napoleon.txt"]
   };
 
   // Score file relevance
