@@ -8,7 +8,6 @@ async function ask() {
 
   if (!prompt) return;
 
-  // Keyword-to-file mapping (flat, no scoring)
   const keywordMap = {
     "blue": ["/film_blue.txt"],
     "AIDS": ["/film_blue.txt"],
@@ -39,61 +38,40 @@ async function ask() {
     "daniel": ["/film_i-daniel-blake.txt"],
     "blake": ["/film_i-daniel-blake.txt"],
     "homeless": ["/film_i-daniel-blake.txt"],
-    "loach": ["/film_i-daniel-blake.txt"],
+    "loach": ["/film_i-daniel-blake.txt", "/film_kes.txt", "/film_cathy-come-home.txt"],
     "austerity": ["/film_i-daniel-blake.txt"],
     "poverty": ["/film_i-daniel-blake.txt"],
-    "napoleon": ["/film_kubrick-napoleon.txt"],
+    "napoleon": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt"],
     "kubrick": ["/film_kubrick-napoleon.txt"],
-    "bondarchuk": ["/film_kubrick-napoleon.txt"],
+    "bondarchuk": ["/film_kubrick-napoleon.txt", "/film_war-and-peace.txt"],
     "unmade": ["/film_kubrick-napoleon.txt"],
-    "military": ["/film_kubrick-napoleon.txt"],
-    "history": ["/film_kubrick-napoleon.txt"],
-    "french": ["/film_kubrick-napoleon.txt"],
-    "army": ["/film_kubrick-napoleon.txt"],
-    "waterloo": ["/film_kubrick-napoleon.txt"],
-    "austerlitz": ["/film_kubrick-napoleon.txt"],
+    "military": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt", "/film_war-and-peace.txt"],
+    "history": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt", "/film_war-and-peace.txt"],
+    "french": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt"],
+    "army": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt", "/film_war-and-peace.txt"],
+    "waterloo": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt", "/film_war-and-peace.txt"],
+    "austerlitz": ["/film_kubrick-napoleon.txt", "/film_napoleon.txt"],
     "rope": ["/film_rope.txt"],
     "gangster": ["/film_long-good-friday.txt"],
     "hoskins": ["/film_long-good-friday.txt"],
-    "london": ["/film_long-good-friday.txt"],
     "british": ["/film_long-good-friday.txt"],
     "crime": ["/film_long-good-friday.txt"],
     "criticism": ["/film_rope.txt"],
     "suspense": ["/film_rope.txt"],
     "hitchcock": ["/film_rope.txt"],
     "kes": ["/film_kes.txt"],
-    "loach": ["/film_kes.txt", "/film_cathy-come-home.txt"],
     "manchester": ["/film_kes.txt"],
     "school": ["/film_kes.txt"],
     "tragedy": ["/film_kes.txt"],
     "cathy": ["/film_cathy-come-home.txt"],
-    "homeless": ["/film_cathy-come-home.txt"],
     "realism": ["/film_cathy-come-home.txt"],
-    "munchausen": ["/film_baron-munchausen.txt"],
-    "gilliam": ["/film_baron-munchausen.txt"],
-    "fantasy": ["/film_baron-munchausen.txt"],
-    "python": ["/film_baron-munchausen.txt"],
-    "history": ["/film_napoleon.txt"],
-    "military": ["/film_napoleon.txt"],
-    "waterloo": ["/film_napoleon.txt"],
-    "austerlitz": ["/film_napoleon.txt"],
-    "french": ["/film_napoleon.txt"],
-    "army": ["/film_napoleon.txt"],
-    "soldier": ["/film_napoleon.txt"],
-    "war": ["/film_napoleon.txt"],
-    "napoleon": ["/film_napoleon.txt"],
     "peace": ["/film_war-and-peace.txt"],
     "russia": ["/film_war-and-peace.txt"],
     "tolstoy": ["/film_war-and-peace.txt"],
-    "bondarchuk": ["/film_war-and-peace.txt"],
     "epic": ["/film_war-and-peace.txt"],
-    "military": ["/film_war-and-peace.txt"],
-    "history": ["/film_war-and-peace.txt"],
-    "army": ["/film_war-and-peace.txt"],
-    "war": ["/film_war-and-peace.txt"]
+    "war": ["/film_war-and-peace.txt", "/film_napoleon.txt"]
   };
 
-  // Match files
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
@@ -119,7 +97,6 @@ async function ask() {
     ];
   }
 
-  // Create and insert block
   const block = document.createElement("div");
   block.className = "response-block";
 
@@ -134,7 +111,6 @@ async function ask() {
 
   responseContainer.prepend(block);
 
-  // Start loading dots animation
   let dotCount = 0;
   const thinkingInterval = setInterval(() => {
     dotCount = (dotCount + 1) % 4;
@@ -157,21 +133,33 @@ async function ask() {
     const json = await gptRes.json();
     const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
 
-    // Render GPT response cleanly
-    body.innerHTML = marked.parse(reply);
+    const html = marked.parse(reply);
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
 
-    // Add link if `source:` exists in any loaded file
+    doc.querySelectorAll("a").forEach(link => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+      link.style.color = "#000";
+      link.style.fontWeight = "bold";
+      link.style.textDecoration = "underline";
+    });
+
+    body.innerHTML = doc.body.innerHTML;
+
     const sourceURL = extractFirstSourceUrl(archiveTexts);
     if (sourceURL) {
       const link = document.createElement("a");
       link.href = sourceURL;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = "Read full piece →";
+      link.textContent = "Read More...";
       link.style.display = "block";
       link.style.marginTop = "10px";
       link.style.fontSize = "14px";
       link.style.fontWeight = "500";
+      link.style.textDecoration = "underline";
+      link.style.color = "#000";
       block.appendChild(link);
     }
 
