@@ -30,6 +30,16 @@ async function ask() {
     "loach": ["/film_i-daniel-blake.txt"],
     "austerity": ["/film_i-daniel-blake.txt"],
     "poverty": ["/film_i-daniel-blake.txt"],
+    "napoleon": ["/film_kubrick-napoleon.txt"],
+    "kubrick": ["/film_kubrick-napoleon.txt"],
+    "bondarchuk": ["/film_kubrick-napoleon.txt"],
+    "unmade": ["/film_kubrick-napoleon.txt"],
+    "military": ["/film_kubrick-napoleon.txt"],
+    "history": ["/film_kubrick-napoleon.txt"],
+    "french": ["/film_kubrick-napoleon.txt"],
+    "army": ["/film_kubrick-napoleon.txt"],
+    "waterloo": ["/film_kubrick-napoleon.txt"],
+    "austerlitz": ["/film_kubrick-napoleon.txt"],
     "rope": ["/film_rope.txt"],
     "gangster": ["/film_long-good-friday.txt"],
     "hoskins": ["/film_long-good-friday.txt"],
@@ -53,6 +63,8 @@ async function ask() {
     "python": ["/film_baron-munchausen.txt"],
     "history": ["/film_napoleon.txt"],
     "military": ["/film_napoleon.txt"],
+    "waterloo": ["/film_napoleon.txt"],
+    "austerlitz": ["/film_napoleon.txt"],
     "french": ["/film_napoleon.txt"],
     "army": ["/film_napoleon.txt"],
     "soldier": ["/film_napoleon.txt"],
@@ -88,6 +100,7 @@ async function ask() {
       "/film_cathy-come-home.txt",
       "/film_plan-75.txt",
       "/film_long-good-friday.txt",
+      "/film_kubrick-napoleon.txt",
       "/film_kes.txt"
     ];
   }
