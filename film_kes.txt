@@ -1,5 +1,6 @@
 ---
 title: "Managing Alone: The Salvation Of Kes"
+source: "https://www.anthologymatt.com/article/managing-alone-the-salvation-of-kes"
 date: "2023-11-30"
 type: "article"
 tags: ["film", "Kes", "Ken Loach", "British cinema", "northern England", "youth", "escape"]
