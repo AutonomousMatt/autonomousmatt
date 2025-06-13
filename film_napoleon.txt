@@ -3,7 +3,7 @@ source: https://www.anthologymatt.com/article/ridley-scotts-napoleon-it-is-the-c
 Author: Matthew Shadbolt
 Date: Dec 5
 Summary: A reflection on Ridley Scott’s film 'Napoleon', exploring its homage to epic cinema, its historical liberties, and its treatment of character, scale, and legacy.
-keywords: french, military, history, napoleon, waterloo, war, auterlitz, battle, soldiers, army, ridley, scott, joaquin, phoenix
+tags: ["french", "military", "history", "napoleon", "waterloo", "war", "austerlitz", "battle", "soldiers", "army", "ridley", "scott", "joaquin", "moscow", "phoenix"]
 Key Insight: Despite its grandeur, 'Napoleon' struggles to recapture the immersive power of classic epic cinema, mirroring its subject’s legacy—ambitious, flawed, and ultimately distant.
 
 Ridley Scott’s Napoleon: It Is The Cause, Not The Death, That Makes The Martyr
