@@ -160,21 +160,6 @@ async function ask() {
     // Render GPT response cleanly
     body.innerHTML = marked.parse(reply);
 
-    // Add link if `source:` exists in any loaded file
-    const sourceURL = extractFirstSourceUrl(archiveTexts);
-    if (sourceURL) {
-      const link = document.createElement("a");
-      link.href = sourceURL;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Read full piece →";
-      link.style.display = "block";
-      link.style.marginTop = "10px";
-      link.style.fontSize = "14px";
-      link.style.fontWeight = "500";
-      block.appendChild(link);
-    }
-
     block.classList.add("show");
     history.unshift({ prompt, reply });
   } catch (err) {
