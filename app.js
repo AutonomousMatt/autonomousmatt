@@ -12,6 +12,7 @@ async function ask() {
   const keywordMap = {
     "rope": ["/rope.txt"],
     "hitchcock": ["/rope.txt"],
+    "film reviews": ["/FilmReviews_01.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
     // Add more as needed
