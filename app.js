@@ -12,6 +12,9 @@ async function ask() {
   const keywordMap = {
     "rope": ["/rope.txt"],
     "hitchcock": ["/rope.txt"],
+    "film": ["/FilmReviews_01.txt"],
+"reviews": ["/FilmReviews_01.txt"],
+"movies": ["/FilmReviews_01.txt"],
     "munchausen": ["/grasp-the-nettle-baron-munchausen.txt"],
     "napoleon": ["/napoleon.txt"]
     // Add more as needed
@@ -33,7 +36,7 @@ async function ask() {
 
   const matchedFiles = rankedFiles.length > 0
     ? rankedFiles
-    : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt"];
+ : ["/rope.txt", "/grasp-the-nettle-baron-munchausen.txt", "/napoleon.txt", "/FilmReviews_01.txt"];
 
   // Create response block
   const block = document.createElement("div");
