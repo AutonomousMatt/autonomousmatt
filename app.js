@@ -18,6 +18,11 @@ async function ask() {
     "memory": ["/film_blue.txt"],
     "london": ["/film_blue.txt"],
     "gay": ["/film_blue.txt"],
+    "japanese": ["/film_plan-75.txt"],
+    "ethics": ["/film_plan-75.txt"],
+    "aging": ["/film_plan-75.txt"],
+    "euthanasia": ["/film_plan-75.txt"],
+    "dystopia": ["/film_plan-75.txt"],
     "rope": ["/film_rope.txt"],
     "gangster": ["/film_long-good-friday.txt"],
     "hoskins": ["/film_long-good-friday.txt"],
@@ -74,6 +79,7 @@ async function ask() {
       "/film_napoleon.txt",
       "/film_war-and-peace.txt",
       "/film_cathy-come-home.txt",
+      "/film_plan-75.txt",
       "/film_long-good-friday.txt",
       "/film_kes.txt"
     ];
