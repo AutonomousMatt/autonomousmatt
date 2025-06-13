@@ -10,6 +10,14 @@ async function ask() {
 
   // Keyword-to-file mapping (flat, no scoring)
   const keywordMap = {
+    "blue": ["/film_blue.txt"],
+    "AIDS": ["/film_blue.txt"],
+    "grief": ["/film_blue.txt"],
+    "jarman": ["/film_blue.txt"],
+    "experimental": ["/film_blue.txt"],
+    "memory": ["/film_blue.txt"],
+    "london": ["/film_blue.txt"],
+    "gay": ["/film_blue.txt"],
     "rope": ["/film_rope.txt"],
     "criticism": ["/film_rope.txt"],
     "suspense": ["/film_rope.txt"],
@@ -55,6 +63,7 @@ async function ask() {
 
   if (matchedFiles.length === 0) {
     matchedFiles = [
+      "/film_blue.txt",
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
       "/film_napoleon.txt",
