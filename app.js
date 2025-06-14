@@ -213,7 +213,8 @@ async function ask() {
       "/story_when-work-stops-being-the-work.txt",
       "/story_twenty-things-in-twenty-years.txt",
       "/story_how-to-be-a-great-product-manager.txt",
-      "/story_life-in-art.txt"
+      "/story_life-in-art.txt",
+      "/talk_destiny-habituation-tactics.txt",
     ];
   }
 
