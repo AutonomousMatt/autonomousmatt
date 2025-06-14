@@ -9,6 +9,18 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "art": ["/story_life-in-art.txt"],
+    "pretension": ["/story_life-in-art.txt"],
+    "creative": ["/story_life-in-art.txt"],
+    "identity": ["/story_life-in-art.txt"],
+    "rejection": ["/story_life-in-art.txt"],
+    "authenticity": ["/story_life-in-art.txt"],
+    "gallery": ["/story_life-in-art.txt"],
+    "purpose": ["/story_life-in-art.txt"],
+    "writing": ["/story_life-in-art.txt"],
+    "amsterdam": ["/story_life-in-art.txt"],
+    "catharsis": ["/story_life-in-art.txt"],
+    "career": ["/story_life-in-art.txt"],
     "blue": ["/film_blue.txt"],
     "AIDS": ["/film_blue.txt"],
     "grief": ["/film_blue.txt"],
@@ -93,7 +105,8 @@ async function ask() {
       "/film_long-good-friday.txt",
       "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
-      "/film_kes.txt"
+      "/film_kes.txt",
+      "/story_life-in-art.txt"
     ];
   }
 
