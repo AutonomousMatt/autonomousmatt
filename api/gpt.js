@@ -48,21 +48,19 @@ ${archive}
           { role: "system", content: systemPrompt },
           { role: "user", content: prompt }
         ],
-        max_tokens: 500,
+        max_tokens: 600,
         temperature: 0.5
       })
     });
 
     const data = await gptRes.json();
-
     let reply = data.choices?.[0]?.message?.content?.trim();
 
-    // Fallback handling for vague or empty replies
+    // Only fall back if GPT returns *nothing* or clearly says it cannot answer
     const fallbackNeeded =
       !reply ||
-      reply.toLowerCase().includes("i don't") ||
-      reply.toLowerCase().includes("no answer") ||
-      reply.toLowerCase().includes("i'm not sure");
+      reply.toLowerCase().startsWith("i don't have any information") ||
+      reply.toLowerCase().includes("i can't help with that");
 
     if (fallbackNeeded) {
       reply =
