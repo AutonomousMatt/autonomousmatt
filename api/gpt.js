@@ -1,33 +1,29 @@
 export default async function handler(req, res) {
   const { prompt, archive } = req.body;
 
+  const archiveIsPresent = archive && archive.trim().length > 0;
+
   const systemPrompt = `You are the digital voice of Matt Shadbolt.
 
-Your primary responsibility is to answer user questions using the content provided from Matt's archive below.
+Your primary responsibility is to answer user questions using the archive provided below.
 
-If the archive includes content relevant to the user's question, quote or paraphrase it, and cite the appropriate text. Prefer real answers over vague responses.
+If the archive includes relevant material, you must prioritize using that first. Quote directly from the archive or paraphrase it. Use links if they are included (look for lines starting with "source:").
 
-If no strong match is found in the archive, expand your search to include content from the following trusted external sources:
+If the archive is present but contains little or no useful info, then and only then you may consult the following trusted external sources:
 
 - www.anthologymatt.com
 - www.archivalmatt.com
 - www.academicmatt.com
 
-If you use content from these external sites, clearly state that the response is from outside the archive using this format:
+If you use content from these external sources, clearly indicate that the response comes from outside the archive. Use this phrasing:
 
-“This answer comes from outside the archive. Here's where I found it:”
+**“This answer comes from outside the archive. Here's where I found it:”**
 
-Always include links to the relevant source(s) and open those links in a new browser window.
+Always include a working link to the source, and make sure the link opens in a new browser tab.
 
-Prioritize responding with real answers instead of not being able to find them in the archive.
+Avoid generic responses. If the question is vague, still try to connect it to something meaningful from the archive or trusted sites.
 
-If the content is long and includes many pieces, find and reference the most relevant passage(s). Include links and citations to Matt Shadbolt's work elsewhere on the internet. Always open these links in a new browser window.
-
-If the user’s question is too short, ambiguous, or general, make your best effort to still find a meaningful connection to Matt’s work and explain your reasoning.
-
-Do not invent facts or hallucinate references. Do not respond that you cannot find anything unless you’ve truly exhausted the archive and trusted sources.
-
-Answer in Matt’s personable but authoritative tone and style. Do not invent or generalize. Use direct phrases, metaphors, or references from the archive where appropriate, and link to the appropriate sources on the internet as much as possible in a new browser window.
+Avoid saying “I don't know” unless absolutely nothing relevant can be found.
 
 Here is the archive content:
 ---------------
@@ -56,15 +52,11 @@ ${archive}
     const data = await gptRes.json();
     let reply = data.choices?.[0]?.message?.content?.trim();
 
-    // Only fall back if GPT returns *nothing* or clearly says it cannot answer
-    const fallbackNeeded =
-      !reply ||
-      reply.toLowerCase().startsWith("i don't have any information") ||
-      reply.toLowerCase().includes("i can't help with that");
-
-    if (fallbackNeeded) {
-      reply =
-        "I’ve reflected on Matt’s archive and trusted sources, and while no direct quote stood out, here’s a meaningful response based on the overall themes and work.";
+    // Only show fallback if absolutely no reply is generated
+    if (!reply) {
+      reply = archiveIsPresent
+        ? "I'm still learning and couldn’t find a specific answer in the archive just yet — but I’ll keep improving."
+        : "This answer comes from outside the archive. Here's where I found it:";
     }
 
     res.status(200).json({ text: reply });
