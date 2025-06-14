@@ -1,14 +1,15 @@
+
 const history = [];
 
-async function ask() {
+function stagedAsk() {
   const promptInput = document.getElementById("prompt");
   const prompt = promptInput.value.trim().toLowerCase();
-  const responseContainer = document.getElementById("response-container");
   promptInput.value = "";
 
   if (!prompt) return;
 
-  // STEP 1: Immediately show "Matt is thinking..."
+  // Create "Matt is thinking..." block and flush DOM
+  const responseContainer = document.getElementById("response-container");
   const block = document.createElement("div");
   block.className = "response-block";
 
@@ -17,7 +18,8 @@ async function ask() {
   block.appendChild(header);
 
   const body = document.createElement("div");
-  body.textContent = "Matt is thinking...";
+  body.id = "thinking-text";
+  body.textContent = "Matt is thinking.";
   body.style.fontStyle = "italic";
   body.style.color = "#555";
   body.style.fontSize = "16px";
@@ -26,10 +28,20 @@ async function ask() {
 
   responseContainer.prepend(block);
 
-  // Let the browser flush the DOM before continuing
-  await new Promise(resolve => setTimeout(resolve, 50));
+  // Start dot animation
+  let dotCount = 0;
+  const thinkingInterval = setInterval(() => {
+    dotCount = (dotCount + 1) % 4;
+    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
+  }, 400);
 
-  // STEP 2: Keyword mapping and archive loading
+  // Defer to main processing after DOM flush
+  setTimeout(() => {
+    ask(prompt, block, body, thinkingInterval);
+  }, 100);
+}
+
+async function ask(prompt, block, body, thinkingInterval) {
 const keywordMap = {
   "aids": ["/film_blue.txt"],
     "japanese": ["/film_plan-75.txt"],
@@ -225,12 +237,14 @@ const keywordMap = {
   "work": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
 };
 
+
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
       matchedFiles.push(...keywordMap[keyword]);
     }
   }
+
   matchedFiles = [...new Set(matchedFiles)];
 
   if (matchedFiles.length === 0) {
@@ -247,15 +261,10 @@ const keywordMap = {
     ];
   }
 
-  let dotCount = 0;
-  const thinkingInterval = setInterval(() => {
-    dotCount = (dotCount + 1) % 4;
-    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
-  }, 400);
-
   try {
-    const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
-    const archiveTexts = await Promise.all(archivePromises);
+    const archiveTexts = await Promise.all(
+      matchedFiles.map(file => fetch(file).then(r => r.text()))
+    );
     const archiveText = archiveTexts.join("\n\n");
 
     const gptRes = await fetch("/api/gpt", {
@@ -281,7 +290,7 @@ const keywordMap = {
       link.style.textDecoration = "underline";
     });
 
-    // Clean up thinking styles before inserting final content
+    body.removeAttribute("id");
     body.removeAttribute("style");
     body.innerHTML = doc.body.innerHTML;
 
