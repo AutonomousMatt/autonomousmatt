@@ -174,13 +174,16 @@ async function ask() {
   body.style.color = "#555";
   block.appendChild(body);
 
-  responseContainer.prepend(block);
+responseContainer.prepend(block);
 
-  let dotCount = 0;
-  const thinkingInterval = setInterval(() => {
-    dotCount = (dotCount + 1) % 4;
-    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
-  }, 400);
+// Allow the DOM to render before running long async tasks
+await new Promise(requestAnimationFrame);
+
+let dotCount = 0;
+const thinkingInterval = setInterval(() => {
+  dotCount = (dotCount + 1) % 4;
+  body.textContent = "Matt is thinking" + ".".repeat(dotCount);
+}, 400);
 
   try {
     const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
