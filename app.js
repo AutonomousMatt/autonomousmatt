@@ -106,6 +106,7 @@ async function ask() {
       "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
       "/film_kes.txt",
+      "/story_journey-from-there-to-here.txt",
       "/story_life-in-art.txt"
     ];
   }
