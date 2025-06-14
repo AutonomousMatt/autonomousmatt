@@ -46,7 +46,7 @@ async function ask() {
   "criticism": ["/film_rope.txt"],
   "cycle": ["/story_the-ten-year-cycle.txt"],
   "decades": ["/story_the-ten-year-cycle.txt"],
-  "destiny": ["/story_the-ten-year-cycle.txt", "/talk_destiny-habituation-tactics.txt"],
+  "destiny": ["/talk_destiny-habituation-tactics.txt"],
   "dog": ["/story_twenty-things-in-twenty-years.txt"],
   "emotional intelligence": ["/story_twenty-things-in-twenty-years.txt"],
   "empathy": ["/story_how-to-be-a-great-product-manager.txt", "/story_twenty-things-in-twenty-years.txt"],
