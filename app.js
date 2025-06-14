@@ -9,6 +9,21 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "destiny": ["/talk_destiny-habituation_tactics.txt"],
+    "videogame": ["/talk_destiny-habituation_tactics.txt"],
+    "gaming": ["/talk_destiny-habituation_tactics.txt"],
+    "habit": ["/talk_destiny-habituation_tactics.txt"],
+    "tactics": ["/talk_destiny-habituation_tactics.txt"],
+    "rewards": ["/talk_destiny-habituation_tactics.txt"],
+    "sunk cost fallacy": ["/talk_destiny-habituation_tactics.txt"],
+    "bungie": ["/talk_destiny-habituation_tactics.txt"],
+    "real estate": ["/talk_destiny-habituation_tactics.txt"],
+    "user experience": ["/talk_destiny-habituation_tactics.txt"],
+    "onboarding": ["/talk_destiny-habituation_tactics.txt"],
+    "community": ["/talk_destiny-habituation_tactics.txt"],
+    "interactive": ["/talk_destiny-habituation_tactics.txt"],
+    "psychology": ["/talk_destiny-habituation_tactics.txt"],
+    "mechanics": ["/talk_destiny-habituation_tactics.txt"],
     "manager": ["/story_how-to-be-a-great-product-manager.txt"],
     "jira": ["/story_how-to-be-a-great-product-manager.txt"],
     "confluence": ["/story_how-to-be-a-great-product-manager.txt"],
