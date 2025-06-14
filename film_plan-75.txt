@@ -1,9 +1,9 @@
 ---
 title: "Plan 75’s Choices: Where Life Happens For You, Not To You"
+source: "https://www.anthologymatt.com/article/plan-75s-choices-where-life-happens-for-you-not-to-you"
 date: "2024-02-23"
 type: "article"
 tags: ["film", "ethics", "aging", "Japan", "dystopia", "personal reflection"]
-source: "https://www.anthologymatt.com/article/plan-75s-choices-where-life-happens-for-you-not-to-you"
 published: true
 project: "Autonomous Matt"
 summary: "A reflection on Chie Hayakawa’s dystopian film *Plan 75*, exploring how agency, aging, and ethical choice converge in a near-future Japan—and how the film mirrors personal insights at age fifty."
