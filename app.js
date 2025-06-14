@@ -1,48 +1,14 @@
-
 const history = [];
 
-function stagedAsk() {
+async function ask() {
   const promptInput = document.getElementById("prompt");
   const prompt = promptInput.value.trim().toLowerCase();
+  const responseContainer = document.getElementById("response-container");
   promptInput.value = "";
 
   if (!prompt) return;
 
-  // Create "Matt is thinking..." block and flush DOM
-  const responseContainer = document.getElementById("response-container");
-  const block = document.createElement("div");
-  block.className = "response-block";
-
-  const header = document.createElement("h3");
-  header.textContent = prompt.charAt(0).toUpperCase() + prompt.slice(1);
-  block.appendChild(header);
-
-  const body = document.createElement("div");
-  body.id = "thinking-text";
-  body.textContent = "Matt is thinking.";
-  body.style.fontStyle = "italic";
-  body.style.color = "#555";
-  body.style.fontSize = "16px";
-  body.style.marginBottom = "10px";
-  block.appendChild(body);
-
-  responseContainer.prepend(block);
-
-  // Start dot animation
-  let dotCount = 0;
-  const thinkingInterval = setInterval(() => {
-    dotCount = (dotCount + 1) % 4;
-    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
-  }, 400);
-
-  // Defer to main processing after DOM flush
-  setTimeout(() => {
-    ask(prompt, block, body, thinkingInterval);
-  }, 100);
-}
-
-async function ask(prompt, block, body, thinkingInterval) {
-const keywordMap = {
+  const keywordMap = {
   "aids": ["/film_blue.txt"],
     "japanese": ["/film_plan-75.txt"],
     "nostalgia": ["/film_virgin-suicides.txt"],
@@ -238,33 +204,65 @@ const keywordMap = {
 };
 
 
+
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
       matchedFiles.push(...keywordMap[keyword]);
     }
   }
-
   matchedFiles = [...new Set(matchedFiles)];
 
   if (matchedFiles.length === 0) {
     matchedFiles = [
-      "/film_blue.txt", "/film_rope.txt", "/film_baron-munchausen.txt", "/film_napoleon.txt",
-      "/film_war-and-peace.txt", "/film_cathy-come-home.txt", "/film_plan-75.txt",
-      "/film_godland.txt", "/film_long-good-friday.txt", "/film_virgin-suicides.txt",
-      "/film_kubrick-napoleon.txt", "/film_kes.txt", "/film_legacy-of-zulu-dawn.txt",
-      "/story_journey-from-there-to-here.txt", "/story_when-you-fell-asleep-forever.txt",
-      "/story_the-ten-year-cycle.txt", "/story_freedom-of-the-worst-day-of-your-life.txt",
-      "/story_when-work-stops-being-the-work.txt", "/story_twenty-things-in-twenty-years.txt",
-      "/story_how-to-be-a-great-product-manager.txt", "/story_life-in-art.txt",
-      "/talk_destiny-habituation-tactics.txt"
+      "/film_blue.txt",
+      "/film_rope.txt",
+      "/film_baron-munchausen.txt",
+      "/film_napoleon.txt",
+      "/film_war-and-peace.txt",
+      "/film_cathy-come-home.txt",
+      "/film_plan-75.txt",
+      "/film_godland.txt",
+      "/film_long-good-friday.txt",
+      "/film_virgin-suicides.txt",
+      "/film_kubrick-napoleon.txt",
+      "/film_kes.txt",
+      "/film_legacy-of-zulu-dawn.txt",
+      "/story_journey-from-there-to-here.txt",
+      "/story_when-you-fell-asleep-forever.txt",
+      "/story_the-ten-year-cycle.txt",
+      "/story_freedom-of-the-worst-day-of-your-life.txt",
+      "/story_when-work-stops-being-the-work.txt",
+      "/story_twenty-things-in-twenty-years.txt",
+      "/story_how-to-be-a-great-product-manager.txt",
+      "/story_life-in-art.txt",
+      "/talk_destiny-habituation-tactics.txt",
     ];
   }
 
+  const block = document.createElement("div");
+  block.className = "response-block";
+
+  const header = document.createElement("h3");
+  header.textContent = prompt.charAt(0).toUpperCase() + prompt.slice(1);
+  block.appendChild(header);
+
+  const body = document.createElement("div");
+  body.id = "thinking-text";
+  body.textContent = "Matt is thinking...";
+  block.appendChild(body);
+
+  responseContainer.prepend(block);
+
+  let dotCount = 0;
+  const thinkingInterval = setInterval(() => {
+    dotCount = (dotCount + 1) % 4;
+    body.textContent = "Matt is thinking" + ".".repeat(dotCount);
+  }, 400);
+
   try {
-    const archiveTexts = await Promise.all(
-      matchedFiles.map(file => fetch(file).then(r => r.text()))
-    );
+    const archivePromises = matchedFiles.map(file => fetch(file).then(r => r.text()));
+    const archiveTexts = await Promise.all(archivePromises);
     const archiveText = archiveTexts.join("\n\n");
 
     const gptRes = await fetch("/api/gpt", {
@@ -290,8 +288,6 @@ const keywordMap = {
       link.style.textDecoration = "underline";
     });
 
-    body.removeAttribute("id");
-    body.removeAttribute("style");
     body.innerHTML = doc.body.innerHTML;
 
     const sourceURL = extractFirstSourceUrl(archiveTexts);
