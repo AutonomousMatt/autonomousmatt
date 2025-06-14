@@ -10,6 +10,7 @@ async function ask() {
 
   const keywordMap = {
   "aids": ["/film_blue.txt"],
+    "japanese": ["/film_plan-75.txt"],
   "zulu": ["/film_legacy-of-zulu-dawn.txt"],
     "british": ["/film_legacy-of-zulu-dawn.txt"],
     "empire": ["/film_legacy-of-zulu-dawn.txt"],
