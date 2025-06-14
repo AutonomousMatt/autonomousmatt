@@ -204,6 +204,7 @@ async function ask() {
 };
 
 
+
   let matchedFiles = [];
   for (const keyword in keywordMap) {
     if (prompt.includes(keyword)) {
@@ -235,7 +236,7 @@ async function ask() {
       "/story_twenty-things-in-twenty-years.txt",
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
-      "/talk_destiny-habituation-tactics.txt"
+      "/talk_destiny-habituation-tactics.txt",
     ];
   }
 
@@ -249,10 +250,6 @@ async function ask() {
   const body = document.createElement("div");
   body.id = "thinking-text";
   body.textContent = "Matt is thinking...";
-  body.style.fontStyle = "italic";
-  body.style.fontWeight = "500";
-  body.style.color = "#555";
-  body.style.marginBottom = "10px";
   block.appendChild(body);
 
   responseContainer.prepend(block);
@@ -275,10 +272,6 @@ async function ask() {
     });
 
     clearInterval(thinkingInterval);
-
-// Reset styles before inserting real response
-body.removeAttribute("style");
-body.innerHTML = doc.body.innerHTML;
 
     const json = await gptRes.json();
     const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
