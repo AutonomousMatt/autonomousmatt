@@ -9,6 +9,20 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "leadership": ["/story_twenty-things-in-twenty-years.txt"],
+    "career": ["/story_twenty-things-in-twenty-years.txt"],
+    "marriage": ["/story_twenty-things-in-twenty-years.txt"],
+    "growth": ["/story_twenty-things-in-twenty-years.txt"],
+    "reslience": ["/story_twenty-things-in-twenty-years.txt"],
+    "product": ["/story_twenty-things-in-twenty-years.txt"],
+    "empathy": ["/story_twenty-things-in-twenty-years.txt"],
+    "emotional intelligence": ["/story_twenty-things-in-twenty-years.txt"],
+    "dog": ["/story_twenty-things-in-twenty-years.txt"],
+    "immigration": ["/story_twenty-things-in-twenty-years.txt"],
+    "lesson": ["/story_twenty-things-in-twenty-years.txt"],
+    "reflection": ["/story_twenty-things-in-twenty-years.txt"],
+    "hard work": ["/story_twenty-things-in-twenty-years.txt"],
+    "consistency": ["/story_twenty-things-in-twenty-years.txt"],
     "work": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
     "resilience": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
     "trauma": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
@@ -177,6 +191,7 @@ async function ask() {
       "/story_the-ten-year-cycle.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
+      "/story_twenty-things-in-twenty-years.txt",
       "/story_life-in-art.txt"
     ];
   }
