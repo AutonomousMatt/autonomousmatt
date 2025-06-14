@@ -4,9 +4,29 @@ async function ask() {
   const promptInput = document.getElementById("prompt");
   const prompt = promptInput.value.trim().toLowerCase();
   const responseContainer = document.getElementById("response-container");
+  const thinkingIndicator = document.getElementById("thinking-indicator");
   promptInput.value = "";
 
   if (!prompt) return;
+
+  thinkingIndicator.style.display = "block"; // Show "AutonomousMatt is thinking..."
+
+  try {
+    const response = await fetch("/ask", {
+      method: "POST",
+      body: JSON.stringify({ prompt }),
+      headers: { "Content-Type": "application/json" }
+    });
+
+    const data = await response.json();
+    responseContainer.innerHTML = `<h2>${prompt}</h2><p>${data.answer}</p>`;
+  } catch (error) {
+    responseContainer.innerHTML = "<p>Something went wrong. Try again.</p>";
+  } finally {
+    thinkingIndicator.style.display = "none"; // Hide after response
+  }
+}
+
 
   const keywordMap = {
   "aids": ["/film_blue.txt"],
