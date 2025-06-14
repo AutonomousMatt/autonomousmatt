@@ -56,7 +56,7 @@ ${archive}
     });
 
     const data = await gptRes.json();
-    const reply = data.choices?.[0]?.message?.content || "I don't yet have an answer for that in my archives.";
+    const reply = data.choices?.[0]?.message?.content || "I am still learning, and don't yet have an answer for that in my archives.";
     res.status(200).json({ text: reply });
   } catch (err) {
     console.error("GPT API error:", err);
