@@ -9,13 +9,13 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
-    "product": ["/story_how-to-be-a-great-product-manager.txt"],
     "manager": ["/story_how-to-be-a-great-product-manager.txt"],
     "jira": ["/story_how-to-be-a-great-product-manager.txt"],
     "confluence": ["/story_how-to-be-a-great-product-manager.txt"],
     "atlassian": ["/story_how-to-be-a-great-product-manager.txt"],
     "product manager": ["/story_how-to-be-a-great-product-manager.txt"],
     "leadership": ["/story_how-to-be-a-great-product-manager.txt"],
+    "product": ["/story_how-to-be-a-great-product-manager.txt"],
     "team": ["/story_how-to-be-a-great-product-manager.txt"],
     "collaboration": ["/story_how-to-be-a-great-product-manager.txt"],
     "listening": ["/story_how-to-be-a-great-product-manager.txt"],
