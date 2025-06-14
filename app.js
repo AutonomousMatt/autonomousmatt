@@ -9,6 +9,19 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "grief": ["/story_when-you-fell-asleep-forever.txt"],
+    "loss": ["/story_when-you-fell-asleep-forever.txt"],
+    "pet": ["/story_when-you-fell-asleep-forever.txt"],
+    "cat": ["/story_when-you-fell-asleep-forever.txt"],
+    "tribute": ["/story_when-you-fell-asleep-forever.txt"],
+    "remembrance": ["/story_when-you-fell-asleep-forever.txt"],
+    "love": ["/story_when-you-fell-asleep-forever.txt"],
+    "companionship": ["/story_when-you-fell-asleep-forever.txt"],
+    "illness": ["/story_when-you-fell-asleep-forever.txt"],
+    "euthanasia": ["/story_when-you-fell-asleep-forever.txt"],
+    "vet": ["/story_when-you-fell-asleep-forever.txt"],
+    "mourning": ["/story_when-you-fell-asleep-forever.txt"],
+    "memory": ["/story_when-you-fell-asleep-forever.txt"],
     "immigration": ["/story_journey-from-there-to-here.txt"],
     "memoir": ["/story_journey-from-there-to-here.txt"],
     "america": ["/story_journey-from-there-to-here.txt"],
