@@ -9,6 +9,25 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "product": ["/story_how-to-be-a-great-product-manager.txt"],
+    "manager": ["/story_how-to-be-a-great-product-manager.txt"],
+    "jira": ["/story_how-to-be-a-great-product-manager.txt"],
+    "confluence": ["/story_how-to-be-a-great-product-manager.txt"],
+    "atlassian": ["/story_how-to-be-a-great-product-manager.txt"],
+    "leadership": ["/story_how-to-be-a-great-product-manager.txt"],
+    "team": ["/story_how-to-be-a-great-product-manager.txt"],
+    "collaboration": ["/story_how-to-be-a-great-product-manager.txt"],
+    "listening": ["/story_how-to-be-a-great-product-manager.txt"],
+    "listen": ["/story_how-to-be-a-great-product-manager.txt"],
+    "user": ["/story_how-to-be-a-great-product-manager.txt"],
+    "empathy": ["/story_how-to-be-a-great-product-manager.txt"],
+    "stakeholder": ["/story_how-to-be-a-great-product-manager.txt"],
+    "communication": ["/story_how-to-be-a-great-product-manager.txt"],
+    "analytics": ["/story_how-to-be-a-great-product-manager.txt"],
+    "metrics": ["/story_how-to-be-a-great-product-manager.txt"],
+    "career": ["/story_how-to-be-a-great-product-manager.txt"],
+    "grit": ["/story_how-to-be-a-great-product-manager.txt"],
+    "kindness": ["/story_how-to-be-a-great-product-manager.txt"],
     "leadership": ["/story_twenty-things-in-twenty-years.txt"],
     "career": ["/story_twenty-things-in-twenty-years.txt"],
     "marriage": ["/story_twenty-things-in-twenty-years.txt"],
@@ -192,6 +211,7 @@ async function ask() {
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
       "/story_twenty-things-in-twenty-years.txt",
+      "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt"
     ];
   }
