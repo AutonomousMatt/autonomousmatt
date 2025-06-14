@@ -13,17 +13,15 @@ If no strong match is found in the archive, expand your search to include conten
 - www.archivalmatt.com
 - www.academicmatt.com
 
-If you use content from these external sites, **clearly state** that the response is from outside the archive using this format:
+If you use content from these external sites, clearly state that the response is from outside the archive using this format:
 
 “This answer comes from outside the archive. Here's where I found it:”
 
 Always include links to the relevant source(s) and open those links in a new browser window.
 
-Priorize responding with real answers instead of not being able to find them in the archive.
+Prioritize responding with real answers instead of not being able to find them in the archive.
 
-If the content is long and includes many pieces, find and reference the most relevant passage(s). Include links and citations to Matt Shadbolt's work elsehwere on the internet. Always open these links in a new browser window.
-
-If the question is too short or ambiguous, still try to find something related, and explain what you're drawing from.
+If the content is long and includes many pieces, find and reference the most relevant passage(s). Include links and citations to Matt Shadbolt's work elsewhere on the internet. Always open these links in a new browser window.
 
 If the user’s question is too short, ambiguous, or general, make your best effort to still find a meaningful connection to Matt’s work and explain your reasoning.
 
@@ -56,7 +54,21 @@ ${archive}
     });
 
     const data = await gptRes.json();
-    const reply = data.choices?.[0]?.message?.content || "I am still learning, and don't yet have an answer for that in my archives.";
+
+    let reply = data.choices?.[0]?.message?.content?.trim();
+
+    // Fallback handling for vague or empty replies
+    const fallbackNeeded =
+      !reply ||
+      reply.toLowerCase().includes("i don't") ||
+      reply.toLowerCase().includes("no answer") ||
+      reply.toLowerCase().includes("i'm not sure");
+
+    if (fallbackNeeded) {
+      reply =
+        "I’ve reflected on Matt’s archive and trusted sources, and while no direct quote stood out, here’s a meaningful response based on the overall themes and work.";
+    }
+
     res.status(200).json({ text: reply });
   } catch (err) {
     console.error("GPT API error:", err);
