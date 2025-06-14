@@ -4,29 +4,9 @@ async function ask() {
   const promptInput = document.getElementById("prompt");
   const prompt = promptInput.value.trim().toLowerCase();
   const responseContainer = document.getElementById("response-container");
-  const thinkingIndicator = document.getElementById("thinking-indicator");
   promptInput.value = "";
 
   if (!prompt) return;
-
-  thinkingIndicator.style.display = "block"; // Show "AutonomousMatt is thinking..."
-
-  try {
-    const response = await fetch("/ask", {
-      method: "POST",
-      body: JSON.stringify({ prompt }),
-      headers: { "Content-Type": "application/json" }
-    });
-
-    const data = await response.json();
-    responseContainer.innerHTML = `<h2>${prompt}</h2><p>${data.answer}</p>`;
-  } catch (error) {
-    responseContainer.innerHTML = "<p>Something went wrong. Try again.</p>";
-  } finally {
-    thinkingIndicator.style.display = "none"; // Hide after response
-  }
-}
-
 
   const keywordMap = {
   "aids": ["/film_blue.txt"],
@@ -255,7 +235,7 @@ async function ask() {
       "/story_twenty-things-in-twenty-years.txt",
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
-      "/talk_destiny-habituation-tactics.txt",
+      "/talk_destiny-habituation-tactics.txt"
     ];
   }
 
@@ -269,6 +249,10 @@ async function ask() {
   const body = document.createElement("div");
   body.id = "thinking-text";
   body.textContent = "Matt is thinking...";
+  body.style.fontStyle = "italic";
+  body.style.fontWeight = "500";
+  body.style.color = "#555";
+  body.style.marginBottom = "10px";
   block.appendChild(body);
 
   responseContainer.prepend(block);
