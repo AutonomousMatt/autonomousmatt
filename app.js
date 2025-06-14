@@ -9,6 +9,17 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "work": ["/story_when-work-stops-being-the-work.txt"],
+    "career": ["/story_when-work-stops-being-the-work.txt"],
+    "advice": ["/story_when-work-stops-being-the-work.txt"],
+    "growth": ["/story_when-work-stops-being-the-work.txt"],
+    "personal": ["/story_when-work-stops-being-the-work.txt"],
+    "ikigai": ["/story_when-work-stops-being-the-work.txt"],
+    "nbc": ["/story_when-work-stops-being-the-work.txt"],
+    "education": ["/story_when-work-stops-being-the-work.txt"],
+    "pandemic": ["/story_when-work-stops-being-the-work.txt"],
+    "life balance": ["/story_when-work-stops-being-the-work.txt"],
+    "reflection": ["/story_when-work-stops-being-the-work.txt"],
     "life": ["/story_the-ten-year-cycle.txt"],
     "cycle": ["/story_the-ten-year-cycle.txt"],
     "nbc": ["/story_the-ten-year-cycle.txt"],
@@ -152,6 +163,7 @@ async function ask() {
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
+      "/story_when-work-stops-being-the-work.txt",
       "/story_life-in-art.txt"
     ];
   }
