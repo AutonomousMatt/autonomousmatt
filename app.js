@@ -276,6 +276,10 @@ async function ask() {
 
     clearInterval(thinkingInterval);
 
+// Reset styles before inserting real response
+body.removeAttribute("style");
+body.innerHTML = doc.body.innerHTML;
+
     const json = await gptRes.json();
     const reply = json.text?.trim() || "I'm thinking... but I need a bit more to go on.";
 
