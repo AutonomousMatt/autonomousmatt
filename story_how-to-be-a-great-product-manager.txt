@@ -1,7 +1,7 @@
 title: How To Be A Great Product Manager
+source: https://www.anthologymatt.com/article/how-to-be-a-great-product-manager
 date: Mar 16
 author: Matthew Shadbolt
-source: https://www.anthologymatt.com/article/how-to-be-a-great-product-manager
 summary: An insightful guide to the key behaviors that define exceptional Product Managers, from kindness and grit to clarity, passion, and outcome-driven thinking.
 key insight: Great Product Managers balance empathy, optimism, and strategic clarity while creating value not only through outcomes, but by inspiring those around them.
 keywords: Product management, leadership, team dynamics, job crafting, user empathy, stakeholder communication, product metrics, career development, kindness, grit
