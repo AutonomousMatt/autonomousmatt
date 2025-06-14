@@ -10,6 +10,15 @@ async function ask() {
 
   const keywordMap = {
   "aids": ["/film_blue.txt"],
+    "emigration": ["/story_how-to-never-look-back.txt"],
+    "airport": ["/story_how-to-never-look-back.txt"],
+    "identity": ["/story_how-to-never-look-back.txt"],
+    "courage": ["/story_how-to-never-look-back.txt"],
+    "america": ["/story_how-to-never-look-back.txt"],
+    "career": ["/story_how-to-never-look-back.txt"],
+    "regret": ["/story_how-to-never-look-back.txt"],
+    "courage": ["/story_how-to-never-look-back.txt"],
+    "nostalgia": ["/story_how-to-never-look-back.txt"],
     "japanese": ["/film_plan-75.txt"],
     "nostalgia": ["/film_virgin-suicides.txt"],
     "suicide": ["/film_virgin-suicides.txt"],
@@ -236,7 +245,8 @@ async function ask() {
       "/story_twenty-things-in-twenty-years.txt",
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
-      "/talk_destiny-habituation-tactics.txt",
+      "/story_how-to-never-look-back.txt",
+      "/talk_destiny-habituation-tactics.txt"
     ];
   }
 
