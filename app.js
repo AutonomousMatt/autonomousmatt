@@ -122,6 +122,7 @@ async function ask() {
       "/film_kubrick-napoleon.txt",
       "/film_kes.txt",
       "/story_journey-from-there-to-here.txt",
+      "/story_when-you-fell-asleep-forever.txt",
       "/story_life-in-art.txt"
     ];
   }
