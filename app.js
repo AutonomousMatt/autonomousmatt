@@ -9,6 +9,21 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "life": ["/story_the-ten-year-cycle.txt"],
+    "cycle": ["/story_the-ten-year-cycle.txt"],
+    "nbc": ["/story_the-ten-year-cycle.txt"],
+    "personal": ["/story_the-ten-year-cycle.txt"],
+    "growth": ["/story_the-ten-year-cycle.txt"],
+    "decades": ["/story_the-ten-year-cycle.txt"],
+    "career": ["/story_the-ten-year-cycle.txt"],
+    "family": ["/story_the-ten-year-cycle.txt"],
+    "values": ["/story_the-ten-year-cycle.txt"],
+    "reflection": ["/story_the-ten-year-cycle.txt"],
+    "new york times": ["/story_the-ten-year-cycle.txt"],
+    "penn": ["/story_the-ten-year-cycle.txt"],
+    "upenn": ["/story_the-ten-year-cycle.txt"],
+    "destiny": ["/story_the-ten-year-cycle.txt"],
+    "catholic": ["/story_the-ten-year-cycle.txt"],
     "grief": ["/story_when-you-fell-asleep-forever.txt"],
     "loss": ["/story_when-you-fell-asleep-forever.txt"],
     "pet": ["/story_when-you-fell-asleep-forever.txt"],
@@ -136,6 +151,7 @@ async function ask() {
       "/film_kes.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
+      "/story_the-ten-year-cycle.txt",
       "/story_life-in-art.txt"
     ];
   }
