@@ -63,7 +63,7 @@ async function ask() {
     "russia": ["/film_war-and-peace.txt"],
     "tolstoy": ["/film_war-and-peace.txt"],
     "epic": ["/film_war-and-peace.txt"],
-    "war": ["/film_war-and-peace.txt", "/film_napoleon.txt"]
+    "war": ["/film_war-and-peace.txt", "/film_napoleon.txt"],
   "zulu": ["/film_legacy-of-zulu-dawn.txt"],
     "british": ["/film_legacy-of-zulu-dawn.txt"],
     "empire": ["/film_legacy-of-zulu-dawn.txt"],
