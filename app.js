@@ -9,6 +9,21 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "immigration": ["/story_journey-from-there-to-here.txt"],
+    "memoir": ["/story_journey-from-there-to-here.txt"],
+    "america": ["/story_journey-from-there-to-here.txt"],
+    "london": ["/story_journey-from-there-to-here.txt"],
+    "philadelphia": ["/story_journey-from-there-to-here.txt"],
+    "nyc": ["/story_journey-from-there-to-here.txt"],
+    "qvc": ["/story_journey-from-there-to-here.txt"],
+    "immigration": ["/story_journey-from-there-to-here.txt"],
+    "personal": ["/story_journey-from-there-to-here.txt"],
+    "playlist": ["/story_journey-from-there-to-here.txt"],
+    "relocation": ["/story_journey-from-there-to-here.txt"],
+    "career": ["/story_journey-from-there-to-here.txt"],
+    "nostalgia": ["/story_journey-from-there-to-here.txt"],
+    "transformation": ["/story_journey-from-there-to-here.txt"],
+    "rebirth": ["/story_journey-from-there-to-here.txt"],
     "art": ["/story_life-in-art.txt"],
     "pretension": ["/story_life-in-art.txt"],
     "creative": ["/story_life-in-art.txt"],
