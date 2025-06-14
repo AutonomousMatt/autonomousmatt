@@ -9,6 +9,17 @@ async function ask() {
   if (!prompt) return;
 
   const keywordMap = {
+    "work": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "resilience": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "trauma": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "fired": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "healing": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "mental health": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "work": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "perspective": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "optimism": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "cancer": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
+    "growth": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
     "work": ["/story_when-work-stops-being-the-work.txt"],
     "career": ["/story_when-work-stops-being-the-work.txt"],
     "advice": ["/story_when-work-stops-being-the-work.txt"],
@@ -54,6 +65,7 @@ async function ask() {
     "london": ["/story_journey-from-there-to-here.txt"],
     "philadelphia": ["/story_journey-from-there-to-here.txt"],
     "nyc": ["/story_journey-from-there-to-here.txt"],
+    "new york": ["/story_journey-from-there-to-here.txt"],
     "qvc": ["/story_journey-from-there-to-here.txt"],
     "immigration": ["/story_journey-from-there-to-here.txt"],
     "personal": ["/story_journey-from-there-to-here.txt"],
@@ -163,6 +175,7 @@ async function ask() {
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
+      "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
       "/story_life-in-art.txt"
     ];
