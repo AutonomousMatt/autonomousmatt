@@ -151,22 +151,22 @@ const keywordMap = {
   "criticism": ["/film_rope.txt"],
 
     // === FILM: EastEnders ===
-  "london": ["/tv-eastenders.txt"],
-  "soap": ["/tv-eastenders.txt"],
-  "soap opera": ["/tv-eastenders.txt"],
-  "bbc": ["/tv-eastenders.txt"],
-  "british": ["/tv-eastenders.txt"],
-  "drama": ["/tv-eastenders.txt"],
-  "serial": ["/tv-eastenders.txt"],
-  "walford": ["/tv-eastenders.txt"],
-  "britbox": ["/tv-eastenders.txt"],
-  "streaming": ["/tv-eastenders.txt"],
-  "community": ["/tv-eastenders.txt"],
-  "pub": ["/tv-eastenders.txt"],
-  "market": ["/tv-eastenders.txt"],
-  "family": ["/tv-eastenders.txt"],
-  "victoria": ["/tv-eastenders.txt"],
-  "culture": ["/tv-eastenders.txt"],
+  "london": ["/tv_eastenders.txt"],
+  "soap": ["/tv_eastenders.txt"],
+  "soap opera": ["/tv_eastenders.txt"],
+  "bbc": ["/tv_eastenders.txt"],
+  "british": ["/tv_eastenders.txt"],
+  "drama": ["/tv_eastenders.txt"],
+  "serial": ["/tv_eastenders.txt"],
+  "walford": ["/tv_eastenders.txt"],
+  "britbox": ["/tv_eastenders.txt"],
+  "streaming": ["/tv_eastenders.txt"],
+  "community": ["/tv_eastenders.txt"],
+  "pub": ["/tv_eastenders.txt"],
+  "market": ["/tv_eastenders.txt"],
+  "family": ["/tv_eastenders.txt"],
+  "victoria": ["/tv_eastenders.txt"],
+  "culture": ["/tv_eastenders.txt"],
 
   // === FILM: Long Good Friday ===
   "gangster": ["/film_long-good-friday.txt"],
@@ -371,7 +371,7 @@ const keywordMap = {
       "/story_how-to-never-look-back.txt",
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
-      "/tv-eastenders.txt",
+      "/tv_eastenders.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
   }
