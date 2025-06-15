@@ -244,6 +244,19 @@ const keywordMap = {
   "new york times": ["/story_the-ten-year-cycle.txt"],
   "penn": ["/story_the-ten-year-cycle.txt"],
 
+    // === ESSAY: The Boy With The Dip ===
+  "fable": ["/story_the-boy-with-the-dip.txt"],
+  "shark": ["/story_the-boy-with-the-dip.txt"],
+  "mortality": ["/story_the-boy-with-the-dip.txt"],
+  "poetic fiction": ["/story_the-boy-with-the-dip.txt"],
+  "obscurity": ["/story_the-boy-with-the-dip.txt"],
+  "myth": ["/story_the-boy-with-the-dip.txt"],
+  "aftermath": ["/story_the-boy-with-the-dip.txt"],
+  "memory": ["/story_the-boy-with-the-dip.txt"],
+  "beach": ["/story_the-boy-with-the-dip.txt"],
+  "surrealism": ["/story_the-boy-with-the-dip.txt"],
+  "heroism": ["/story_the-boy-with-the-dip.txt"],
+
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
   "hospital": ["/story_on-surviving-why-im-still-here.txt"],
@@ -324,6 +337,7 @@ const keywordMap = {
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
       "/story_how-to-never-look-back.txt",
+      "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
