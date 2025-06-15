@@ -196,7 +196,7 @@ const keywordMap = {
   "new york times": ["/story_the-ten-year-cycle.txt"],
   "penn": ["/story_the-ten-year-cycle.txt"],
 
-  // === PRODUCT / DESTINY ESSAYS ===
+  // === PRODUCT ESSAYS ===
   "product": ["/story_how-to-be-a-great-product-manager.txt", "/story_twenty-things-in-twenty-years.txt"],
   "product manager": ["/story_how-to-be-a-great-product-manager.txt"],
   "jira": ["/story_how-to-be-a-great-product-manager.txt"],
@@ -214,7 +214,9 @@ const keywordMap = {
   "stakeholder": ["/story_how-to-be-a-great-product-manager.txt"],
   "user": ["/story_how-to-be-a-great-product-manager.txt"],
 
-  "destiny": ["/talk_destiny-habituation-tactics.txt"],
+  // === VIDEOGAME ESSAYS ===
+  
+  "destiny": ["/talk_destiny-habituation-tactics.txt", "/story_twenty-things-in-twenty-years.txt"],
   "gaming": ["/talk_destiny-habituation-tactics.txt"],
   "videogame": ["/talk_destiny-habituation-tactics.txt"],
   "habit": ["/talk_destiny-habituation-tactics.txt"],
