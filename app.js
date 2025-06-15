@@ -176,6 +176,20 @@ const keywordMap = {
   "british crime": ["/film_long-good-friday.txt"],
   "crime": ["/film_long-good-friday.txt"],
 
+    // === FILM: Barry Lyndon ===
+  "kubrick": ["/film_barry-lyndon.txt"],
+    "bullingdon": ["/film_barry-lyndon.txt"],
+    "duel": ["/film_barry-lyndon.txt"],
+    "period drama": ["/film_barry-lyndon.txt"],
+    "historical": ["/film_barry-lyndon.txt"],
+    "lighting": ["/film_barry-lyndon.txt"],
+    "emotional abuse": ["/film_barry-lyndon.txt"],
+    "irish": ["/film_barry-lyndon.txt"],
+    "1970s": ["/film_barry-lyndon.txt"],
+    "classic cinema": ["/film_barry-lyndon.txt"],
+    "barry lyndon": ["/film_barry-lyndon.txt"],
+  "thackeray": ["/film_barry-lyndon.txt"],
+
   // === FILM: Kes & Cathy Come Home ===
   "kes": ["/film_kes.txt"],
   "tragedy": ["/film_kes.txt"],
@@ -359,6 +373,7 @@ const keywordMap = {
       "/film_long-good-friday.txt",
       "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
+      "/film_barry-lyndon.txt",
       "/film_kes.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
