@@ -96,6 +96,19 @@ const keywordMap = {
   "memory": ["/film_virgin-suicides.txt"],
   "suburbia": ["/film_virgin-suicides.txt"],
 
+    // === FILM: Fizcarraldo ===
+  "opera": ["/film_fitzcarraldo.txt"],
+  "herzog": ["/film_fitzcarraldo.txt"],
+    "rainforest": ["/film_fitzcarraldo.txt"],
+    "kinski": ["/film_fitzcarraldo.txt"],
+    "german": ["/film_fitzcarraldo.txt"],
+    "caruso": ["/film_fitzcarraldo.txt"],
+    "jungle": ["/film_fitzcarraldo.txt"],
+    "ambition": ["/film_fitzcarraldo.txt"],
+    "realism": ["/film_fitzcarraldo.txt"],
+    "effort": ["/film_fitzcarraldo.txt"],
+    "fitzcarraldo": ["/film_fitzcarraldo.txt"],
+
   // === FILM: Godland ===
   "missionary": ["/film_godland.txt"],
   "palmason": ["/film_godland.txt"],
@@ -370,6 +383,7 @@ const keywordMap = {
       "/film_cathy-come-home.txt",
       "/film_plan-75.txt",
       "/film_godland.txt",
+      "/film_fitzcarraldo.txt",
       "/film_long-good-friday.txt",
       "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
