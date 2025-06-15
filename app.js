@@ -150,6 +150,24 @@ const keywordMap = {
   "suspense": ["/film_rope.txt"],
   "criticism": ["/film_rope.txt"],
 
+    // === FILM: EastEnders ===
+  "london": ["/tv-eastenders.txt"],
+  "soap": ["/tv-eastenders.txt"],
+  "soap opera": ["/tv-eastenders.txt"],
+  "bbc": ["/tv-eastenders.txt"],
+  "british": ["/tv-eastenders.txt"],
+  "drama": ["/tv-eastenders.txt"],
+  "serial": ["/tv-eastenders.txt"],
+  "walford": ["/tv-eastenders.txt"],
+  "britbox": ["/tv-eastenders.txt"],
+  "streaming": ["/tv-eastenders.txt"],
+  "community": ["/tv-eastenders.txt"],
+  "pub": ["/tv-eastenders.txt"],
+  "market": ["/tv-eastenders.txt"],
+  "family": ["/tv-eastenders.txt"],
+  "victoria": ["/tv-eastenders.txt"],
+  "culture": ["/tv-eastenders.txt"],
+
   // === FILM: Long Good Friday ===
   "gangster": ["/film_long-good-friday.txt"],
   "hoskins": ["/film_long-good-friday.txt"],
@@ -353,6 +371,7 @@ const keywordMap = {
       "/story_how-to-never-look-back.txt",
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
+      "/tv-eastenders.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
   }
