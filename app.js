@@ -244,6 +244,16 @@ const keywordMap = {
   "new york times": ["/story_the-ten-year-cycle.txt"],
   "penn": ["/story_the-ten-year-cycle.txt"],
 
+    // === ESSAY: Cancer Survival ===
+  "cancer": ["/story_on-surviving-why-im-still-here.txt"],
+  "hospital": ["/story_on-surviving-why-im-still-here.txt"],
+  "life cycle": ["/story_on-surviving-why-im-still-here.txt"],
+  "resilience": ["/story_on-surviving-why-im-still-here.txt"],
+  "grit": ["/story_on-surviving-why-im-still-here.txt"],
+  "diagnosis": ["/story_on-surviving-why-im-still-here.txt"],
+  "kindness": ["/story_on-surviving-why-im-still-here.txt"],
+  "recovery": ["/story_on-surviving-why-im-still-here.txt"],
+
   // === PRODUCT ESSAYS ===
   "product": ["/story_how-to-be-a-great-product-manager.txt", "/story_twenty-things-in-twenty-years.txt"],
   "product manager": ["/story_how-to-be-a-great-product-manager.txt"],
@@ -314,6 +324,7 @@ const keywordMap = {
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
       "/story_how-to-never-look-back.txt",
+      "/story_on-surviving-why-im-still-here.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
   }
