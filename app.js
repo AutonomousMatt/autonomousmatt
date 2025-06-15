@@ -17,7 +17,7 @@ const keywordMap = {
   "experimental": ["/film_blue.txt"],
   "color": ["/film_blue.txt"],
   "monologue": ["/film_blue.txt"],
-  "queer": ["/film_blue.txt"],
+  "queer": ["/film_blue.txt", "/film_rope.txt"],
   "illness": ["/film_blue.txt"],
   "voiceover": ["/film_blue.txt"],
 
