@@ -172,6 +172,19 @@ const keywordMap = {
   "munchausen": ["/film_baron-munchausen.txt"],
   "comedy": ["/film_baron-munchausen.txt"],
 
+    // === FILM: The Orchestra ===
+  "Rybczynski": ["/film_the-orchestra.txt"],
+  "Zbigniew": ["/film_the-orchestra.txt"],
+  "classical": ["/film_the-orchestra.txt"],
+  "orchestra": ["/film_the-orchestra.txt"],
+  "experimental": ["/film_the-orchestra.txt"],
+  "russia": ["/film_the-orchestra.txt"],
+  "history": ["/film_the-orchestra.txt"],
+  "video": ["/film_the-orchestra.txt"],
+  "short film": ["/film_the-orchestra.txt"],
+  "louvre": ["/film_the-orchestra.txt"],
+  "conductor": ["/film_the-orchestra.txt"],
+
   // === ESSAY: How To Never Look Back ===
   "emigration": ["/story_how-to-never-look-back.txt"],
   "immigration": ["/story_how-to-never-look-back.txt"],
@@ -328,6 +341,7 @@ const keywordMap = {
       "/film_kubrick-napoleon.txt",
       "/film_kes.txt",
       "/film_legacy-of-zulu-dawn.txt",
+      "/film_the-orchestra.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
