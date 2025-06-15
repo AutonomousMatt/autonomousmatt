@@ -374,13 +374,12 @@ const keywordMap = {
       link.href = sourceURL;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = "Read More...";
+      link.textContent = "Learn more in the full article";
       link.style.display = "block";
       link.style.marginTop = "10px";
       link.style.fontSize = "14px";
-      link.style.fontWeight = "500";
-      link.style.textDecoration = "underline";
-      link.style.color = "#000";
+      link.style.fontWeight = "600";
+      link.style.color = "#fff";
       block.appendChild(link);
     }
 
