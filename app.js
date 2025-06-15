@@ -152,6 +152,8 @@ const keywordMap = {
 
     // === FILM: EastEnders ===
   "london": ["/tv_eastenders.txt"],
+    "eastenders": ["/tv_eastenders.txt"],
+    "east end": ["/tv_eastenders.txt"],
   "soap": ["/tv_eastenders.txt"],
   "soap opera": ["/tv_eastenders.txt"],
   "bbc": ["/tv_eastenders.txt"],
