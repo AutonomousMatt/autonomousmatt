@@ -58,7 +58,7 @@ ${archive}
 
     if (!reply || fallbackTrigger) {
       reply = archiveIsPresent
-        ? "I expected a stronger match in Matt’s archive, especially from his writing on product management. This may be a case where the phrasing doesn't exactly match the question. Please try rephrasing or ask again."
+        ? "That’s a great question. I don’t have a direct match in my archive yet, but I’ll record it so Matt can add something soon."
         : "This answer comes from outside the archive. Here's where I found it:";
     }
 
