@@ -294,6 +294,20 @@ const keywordMap = {
   "force": ["/film_what-star-wars-means-to-me.txt"],
   "science fiction": ["/film_what-star-wars-means-to-me.txt"],
 
+      // === FILM: Stalker ===
+  "stalker": ["/film_stalker.txt"],
+  "russia": ["/film_stalker.txt"],
+  "room": ["/film_stalker.txt"],
+  "existential": ["/film_stalker.txt"],
+  "chernobyl": ["/film_stalker.txt"],
+  "russia": ["/film_stalker.txt"],
+  "soviet": ["/film_stalker.txt"],
+  "cold war": ["/film_stalker.txt"],
+  "ambition": ["/film_stalker.txt"],
+  "desire": ["/film_stalker.txt"],
+  "truth": ["/film_stalker.txt"],
+  "tarkovsky": ["/film_stalker.txt"],
+  
       // === FILM: Sophies Choice ===
   "sophies choice": ["/film_sophies-choice.txt"],
   "meryl streep": ["/film_sophies-choice.txt"],
@@ -705,6 +719,7 @@ const keywordMap = {
       "/film_godland.txt",
       "/film_fitzcarraldo.txt",
       "/film_long-good-friday.txt",
+      "/film_stalker.txt",
       "/film_virgin-suicides.txt",
       "/film_kubrick-napoleon.txt",
       "/film_barry-lyndon.txt",
