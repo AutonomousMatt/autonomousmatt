@@ -308,6 +308,20 @@ const keywordMap = {
   "decision": ["/film_sophies-choice.txt"],
   "ethics": ["/film_sophieschoice.txt"],
 
+      // === FILM: Nomadland ===
+  "nomadland": ["/film_nomadland.txt"],
+  "homeless": ["/film_nomadland.txt"],
+  "frances mcdormand": ["/film_nomadland.txt"],
+  "nomads": ["/film_nomadland.txt"],
+  "grief": ["/film_nomadland.txt"],
+  "freedom": ["/film_nomadland.txt"],
+  "economy": ["/film_nomadland.txt"],
+  "collapse": ["/film_nomadland.txt"],
+  "open road": ["/film_nomadland.txt"],
+  "road movie": ["/film_nomadland.txt"],
+  "nevada": ["/film_nomadland.txt"],
+  "amazon": ["/film_nomadland.txt"],
+  
       // === FILM: High Fidelity ===
   "high fidelity": ["/film_high-fidelity.txt"],
   "music": ["/film_high-fidelity.txt"],
@@ -697,6 +711,7 @@ const keywordMap = {
       "/film_kes.txt",
       "/film_detective-blanc-donut-theory.txt",
       "/film_seeing-and-saw.txt",
+      "/film_nomadland.txt",
       "/film_sophies-choice.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
