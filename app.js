@@ -514,6 +514,22 @@ const keywordMap = {
   "newspaper": ["/story_beware-the-owls-herald.txt"],
   "locked": ["/story_beware-the-owls-herald.txt"],
   "puzzle": ["/story_beware-the-owls-herald.txt"],
+
+       // === STORY: I Remember ===
+  "remember": ["/story_i-remember.txt"],
+  "memoir": ["/story_i-remember.txt"],
+  "memory": ["/story_i-remember.txt"],
+  "reflection": ["/story_i-remember.txt"],
+  "pain": ["/story_i-remember.txt"],
+  "childhood": ["/story_i-remember.txt"],
+  "nostalgia": ["/story_i-remember.txt"],
+  "identity": ["/story_i-remember.txt"],
+  "1970s": ["/story_i-remember.txt"],
+  "present": ["/story_i-remember.txt"],
+  "poetic prose": ["/story_i-remember.txt"],
+  "cultural": ["/story_i-remember.txt"],
+  "stories": ["/story_i-remember.txt"],
+  "seventies": ["/story_i-remember.txt"],
   
        // === STORY: Fumbling From Within ===
   "cleveland": ["/story_fumbling-from-within.txt"],
@@ -697,6 +713,7 @@ const keywordMap = {
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
+      "/story_i-remember.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
       "/story_twenty-things-in-twenty-years.txt",
