@@ -497,6 +497,19 @@ const keywordMap = {
   "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
   "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
 
+          // === GAMING: Death Stranding ===
+  "kojima": ["/gaming_death-stranding.txt"],
+  "death stranding": ["/gaming_death-stranding.txt"],
+  "greek mythology": ["/gaming_death-stranding.txt"],
+  "stoicism": ["/gaming_death-stranding.txt"],
+  "videogame": ["/gaming_death-stranding.txt"],
+  "existentialism": ["/gaming_death-stranding.txt"],
+  "fate": ["/gaming_death-stranding.txt"],
+  "isolation": ["/gaming_death-stranding.txt"],
+  "walking": ["/gaming_death-stranding.txt"],
+  "repatriation": ["/gaming_death-stranding.txt"],
+  "connection": ["/gaming_death-stranding.txt"],
+  
           // === GAMING: Live Die Eat Cheat ===
   "gaming": ["/gaming_live-die-eat-cheat.txt"],
   "nintendo": ["/gaming_live-die-eat-cheat.txt"],
@@ -601,6 +614,7 @@ const keywordMap = {
       "/film_what-star-wars-means-to-me.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
+      "/gaming_death-stranding.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
       "/story_journey-from-there-to-here.txt",
