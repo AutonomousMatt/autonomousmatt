@@ -440,6 +440,23 @@ const keywordMap = {
   "surrealism": ["/story_the-boy-with-the-dip.txt"],
   "heroism": ["/story_the-boy-with-the-dip.txt"],
 
+      // === STORY: Beware The Owls Herald ===
+  "new york": ["/story_beware-the-owls-herald.txt"],
+  "james bennett": ["/story_beware-the-owls-herald.txt"],
+  "rumination": ["/story_beware-the-owls-herald.txt"],
+  "herald square": ["/story_beware-the-owls-herald.txt"],
+  "owl": ["/story_beware-the-owls-herald.txt"],
+  "mystery": ["/story_beware-the-owls-herald.txt"],
+  "occult": ["/story_beware-the-owls-herald.txt"],
+  "urban legend": ["/story_beware-the-owls-herald.txt"],
+  "ghost": ["/story_beware-the-owls-herald.txt"],
+  "history": ["/story_beware-the-owls-herald.txt"],
+  "fiction": ["/story_beware-the-owls-herald.txt"],
+  "newspaper": ["/story_beware-the-owls-herald.txt"],
+  "locked": ["/story_beware-the-owls-herald.txt"],
+  "puzzle": ["/story_beware-the-owls-herald.txt"],
+  
+  
       // === STORY: Eyes Up ===
   "rumination": ["/story_eyes-up.txt"],
   "grief": ["/story_eyes-up.txt"],
@@ -585,6 +602,7 @@ const keywordMap = {
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_live-die-eat-cheat.txt",
+      "/story_beware-the-owls-herald.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
