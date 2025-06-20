@@ -294,6 +294,21 @@ const keywordMap = {
   "decision": ["/film_sophies-choice.txt"],
   "ethics": ["/film_sophieschoice.txt"],
 
+      // === FILM: High Fidelity ===
+  "high fidelity": ["/film_high-fidelity.txt"],
+  "music": ["/film_high-fidelity.txt"],
+  "record store": ["/film_high-fidelity.txt"],
+  "vinyl": ["/film_high-fidelity.txt"],
+  "john cusack": ["/film_high-fidelity.txt"],
+  "jack black": ["/film_high-fidelity.txt"],
+  "collection": ["/film_high-fidelity.txt"],
+  "chicago": ["/film_high-fidelity.txt"],
+  "snob": ["/film_high-fidelity.txt"],
+  "love": ["/film_high-fidelity.txt"],
+  "breakup": ["/film_high-fidelity.txt"],
+  "top 5": ["/film_high-fidelity.txt"],
+  "comedy": ["/film_high-fidelity.txt"],
+
     // === FILM: The Orchestra ===
   "Rybczynski": ["/film_the-orchestra.txt"],
   "Zbigniew": ["/film_the-orchestra.txt"],
@@ -621,6 +636,7 @@ const keywordMap = {
       "/film_blue.txt",
       "/film_beanpole.txt",
       "/film_career-girls.txt",
+      "/film_high-fidelity.txt",
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
       "/film_napoleon.txt",
