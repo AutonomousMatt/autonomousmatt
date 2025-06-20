@@ -211,6 +211,20 @@ const keywordMap = {
   "cathy": ["/film_cathy-come-home.txt"],
   "realism": ["/film_cathy-come-home.txt"],
 
+    // === FILM: Seeing and Saw ===
+  "horror": ["/film_seeing-and-saw.txt"],
+  "gore": ["/film_seeing-and-saw.txt"],
+  "filmgoing": ["/film_seeing-and-saw.txt"],
+  "saw": ["/film_seeing-and-saw.txt"],
+  "creativity": ["/film_seeing-and-saw.txt"],
+  "indie film": ["/film_seeing-and-saw.txt"],
+  "moviegoing": ["/film_seeing-and-saw.txt"],
+  "terror": ["/film_seeing-and-saw.txt"],
+  "violence": ["/film_seeing-and-saw.txt"],
+  "jigsaw": ["/film_seeing-and-saw.txt"],
+  "trap": ["/film_seeing-and-saw.txt"],
+
+
   // === FILM: Baron Munchausen ===
   "python": ["/film_baron-munchausen.txt"],
   "gilliam": ["/film_baron-munchausen.txt"],
@@ -402,6 +416,7 @@ const keywordMap = {
       "/film_kubrick-napoleon.txt",
       "/film_barry-lyndon.txt",
       "/film_kes.txt",
+      "/film_seeing-and-saw.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
       "/story_journey-from-there-to-here.txt",
