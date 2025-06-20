@@ -307,6 +307,25 @@ const keywordMap = {
   "louvre": ["/film_the-orchestra.txt"],
   "conductor": ["/film_the-orchestra.txt"],
 
+      // === FILM: Beanpole ===
+  "beanpole": ["/film_beanpole.txt"],
+  "russia": ["/film_beanpole.txt"],
+  "war": ["/film_beanpole.txt"],
+  "mental illness": ["/film_beanpole.txt"],
+  "Vasilisa Perelygina": ["/film_beanpole.txt"],
+  "Viktoria Miroshnichenko": ["/film_beanpole.txt"],
+  "Kantemir Balagov": ["/film_beanpole.txt"],
+  "second world war": ["/film_beanpole.txt"],
+  "world war 2": ["/film_beanpole.txt"],
+  "euthanasia": ["/film_beanpole.txt"],
+  "soviet union": ["/film_beanpole.txt"],
+  "intimacy": ["/film_beanpole.txt"],
+  "trauma": ["/film_beanpole.txt"],
+  "cold": ["/film_beanpole.txt"],
+  "hospital": ["/film_beanpole.txt"],
+  "leningrad": ["/film_beanpole.txt"],
+  
+
       // === TV: Alan Bennett Talking Heads ===
   "alan bennett": ["/tv_alan-bennett-talking-heads.txt"],
    "british": ["/tv_alan-bennett-talking-heads.txt"],
@@ -541,6 +560,7 @@ const keywordMap = {
   if (matchedFiles.length === 0) {
     matchedFiles = [
       "/film_blue.txt",
+      "/film_beanpole.txt",
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
       "/film_napoleon.txt",
