@@ -472,6 +472,19 @@ const keywordMap = {
   "locked": ["/story_beware-the-owls-herald.txt"],
   "puzzle": ["/story_beware-the-owls-herald.txt"],
   
+       // === STORY: Fumbling From Within ===
+  "cleveland": ["/story_fumbling-from-within.txt"],
+  "browns": ["/story_fumbling-from-within.txt"],
+  "football": ["/story_fumbling-from-within.txt"],
+  "playoff": ["/story_fumbling-from-within.txt"],
+  "byner": ["/story_fumbling-from-within.txt"],
+  "running": ["/story_fumbling-from-within.txt"],
+  "goal line": ["/story_fumbling-from-within.txt"],
+  "fumble": ["/story_fumbling-from-within.txt"],
+  "kosar": ["/story_fumbling-from-within.txt"],
+  "resilience": ["/story_fumbling-from-within.txt"],
+  "heartbreak": ["/story_fumbling-from-within.txt"],
+  "loyalty": ["/story_fumbling-from-within.txt"],
   
       // === STORY: Eyes Up ===
   "rumination": ["/story_eyes-up.txt"],
@@ -634,6 +647,7 @@ const keywordMap = {
       "/gaming_death-stranding.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
+      "/story_fumbling-from-within.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
