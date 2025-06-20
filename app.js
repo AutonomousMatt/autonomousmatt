@@ -279,7 +279,20 @@ const keywordMap = {
   "empire": ["/film_what-star-wars-means-to-me.txt"],
   "force": ["/film_what-star-wars-means-to-me.txt"],
   "science fiction": ["/film_what-star-wars-means-to-me.txt"],
-  
+
+      // === FILM: Sophies Choice ===
+  "sophies choice": ["/film_sophies-choice.txt"],
+  "meryl streep": ["/film_sophies-choice.txt"],
+  "kevin kline": ["/film_sophies-choice.txt"],
+  "consequence": ["/film_sophies-choice.txt"],
+  "consequentialism": ["/film_sophies-choice.txt"],
+  "choice": ["/film_sophies-choice.txt"],
+  "nazi": ["/film_sophies-choice.txt"],
+  "concentration camp": ["/film_sophies-choice.txt"],
+  "daughter": ["/film_sophies-choice.txt"],
+  "moral": ["/film_sophies-choice.txt"],
+  "decision": ["/film_sophies-choice.txt"],
+  "ethics": ["/film_sophieschoice.txt"],
 
     // === FILM: The Orchestra ===
   "Rybczynski": ["/film_the-orchestra.txt"],
@@ -543,6 +556,7 @@ const keywordMap = {
       "/film_kes.txt",
       "/film_detective-blanc-donut-theory.txt",
       "/film_seeing-and-saw.txt",
+      "/film_sophies-choice.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
       "/film_withnail-and-us.txt",
