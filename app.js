@@ -233,6 +233,21 @@ const keywordMap = {
   "munchausen": ["/film_baron-munchausen.txt"],
   "comedy": ["/film_baron-munchausen.txt"],
 
+    // === FILM: Withnail And Us ===
+  "withnail": ["/film_withnail-and-us.txt"],
+  "comedy": ["/film_withnail-and-us.txt"],
+  "sixties": ["/film_withnail-and-us.txt"],
+  "friendship": ["/film_withnail-and-us.txt"],
+  "london": ["/film_withnail-and-us.txt"],
+  "love": ["/film_withnail-and-us.txt"],
+  "departure": ["/film_withnail-and-us.txt"],
+  "loss": ["/film_withnail-and-us.txt"],
+  "actor": ["/film_withnail-and-us.txt"],
+  "countryside": ["/film_withnail-and-us.txt"],
+  "alcohol": ["/film_withnail-and-us.txt"],
+  "booze": ["/film_withnail-and-us.txt"],
+
+
     // === FILM: Detective Blanc Donut Theory ===
   "daniel craig": ["/film_detective-blanc-donut-theory.txt"],
   "whodunnit": ["/film_detective-blanc-donut-theory.txt"],
@@ -501,6 +516,7 @@ const keywordMap = {
       "/film_seeing-and-saw.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
+      "/film_withnail-and-us.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
