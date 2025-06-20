@@ -351,6 +351,21 @@ const keywordMap = {
   "top 5": ["/film_high-fidelity.txt"],
   "comedy": ["/film_high-fidelity.txt"],
 
+    // === FILM: Dancer In The Dark ===
+  "dancer in the dark": ["/film_dancer-in-the-dark.txt"],
+  "blind": ["/film_dancer-in-the-dark.txt"],
+  "blindness": ["/film_dancer-in-the-dark.txt"],
+  "eyesight": ["/film_dancer-in-the-dark.txt"],
+  "musical": ["/film_dancer-in-the-dark.txt"],
+  "factory": ["/film_dancer-in-the-dark.txt"],
+  "lars von trier": ["/film_dancer-in-the-dark.txt"],
+  "immigrant": ["/film_dancer-in-the-dark.txt"],
+  "imagination": ["/film_dancer-in-the-dark.txt"],
+  "tragedy": ["/film_dancer-in-the-dark.txt"],
+  "murder": ["/film_dancer-in-the-dark.txt"],
+  "hardship": ["/film_dancer-in-the-dark.txt"],
+  "bjork": ["/film_dancer-in-the-dark.txt"],
+  
     // === FILM: The Orchestra ===
   "Rybczynski": ["/film_the-orchestra.txt"],
   "Zbigniew": ["/film_the-orchestra.txt"],
@@ -731,6 +746,7 @@ const keywordMap = {
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
       "/film_withnail-and-us.txt",
+      "/film_dancer-in-the-dark.txt",
       "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/essay_geek-culture.txt",
