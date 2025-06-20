@@ -322,6 +322,21 @@ const keywordMap = {
   "decision": ["/film_sophies-choice.txt"],
   "ethics": ["/film_sophieschoice.txt"],
 
+        // === FILM: Paris Texas ===
+  "paris": ["/film_paris-texas.txt"],
+  "texas": ["/film_paris-texas.txt"],
+  "wim wenders": ["/film_paris-texas.txt"],
+  "road movie": ["/film_paris-texas.txt"],
+  "desert": ["/film_paris-texas.txt"],
+  "dean stockwell": ["/film_paris-texas.txt"],
+  "harry dean stanton": ["/film_paris-texas.txt"],
+  "ry cooder": ["/film_paris-texas.txt"],
+  "nastassja kinski": ["/film_paris-texas.txt"],
+  "loneliness": ["/film_paris-texas.txt"],
+  "divorce": ["/film_paris-texas.txt"],
+  "love": ["/film_paris-texas.txt"],
+  "separation": ["/film_paris-texas.txt"],
+  
       // === FILM: Nomadland ===
   "nomadland": ["/film_nomadland.txt"],
   "homeless": ["/film_nomadland.txt"],
@@ -742,6 +757,7 @@ const keywordMap = {
       "/film_detective-blanc-donut-theory.txt",
       "/film_seeing-and-saw.txt",
       "/film_nomadland.txt",
+      "/film_paris-texas.txt",
       "/film_sophies-choice.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
