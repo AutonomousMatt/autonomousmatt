@@ -344,6 +344,19 @@ const keywordMap = {
   "new york": ["/story_eyes-up.txt"],
   "estrangement": ["/story_eyes-up.txt"],
 
+        // === GAMING: Quake 2 Tournament Review ===
+  "quake": ["/gaming_fragging-the-competition.txt"],
+  "quakeadelica": ["/gaming_fragging-the-competition.txt"],
+  "jo guest": ["/gaming_fragging-the-competition.txt"],
+  "first person": ["/gaming_fragging-the-competition.txt"],
+  "thresh": ["/gaming_fragging-the-competition.txt"],
+  "tournament": ["/gaming_fragging-the-competition.txt"],
+  "esports": ["/gaming_fragging-the-competition.txt"],
+  "ministry of sound": ["/gaming_fragging-the-competition.txt"],
+  "review": ["/gaming_fragging-the-competition.txt"],
+  "gaming": ["/gaming_fragging-the-competition.txt"],
+  "videogame": ["/gaming_fragging-the-competition.txt"],
+
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
   "hospital": ["/story_on-surviving-why-im-still-here.txt"],
@@ -419,6 +432,7 @@ const keywordMap = {
       "/film_seeing-and-saw.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
+      "/gaming_fragging-the-competition.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
