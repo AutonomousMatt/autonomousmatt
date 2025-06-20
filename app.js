@@ -294,6 +294,21 @@ const keywordMap = {
   "louvre": ["/film_the-orchestra.txt"],
   "conductor": ["/film_the-orchestra.txt"],
 
+      // === FILM: Joy Division Control ===
+  "joy division": ["/film_joy-division-control.txt"],
+  "ian curtis": ["/film_joy-division-control.txt"],
+  "new order": ["/film_joy-division-control.txt"],
+  "salford": ["/film_joy-division-control.txt"],
+  "manchester": ["/film_joy-division-control.txt"],
+  "sex pistols": ["/film_joy-division-control.txt"],
+  "factory": ["/film_joy-division-control.txt"],
+  "control": ["/film_joy-division-control.txt"],
+  "unknown pleasures": ["/film_joy-division-control.txt"],
+  "suicide": ["/film_joy-division-control.txt"],
+  "bleak": ["/film_joy-division-control.txt"],
+  "black and white": ["/film_joy-division-control.txt"],
+  "seventies": ["/film_joy-division-control.txt"],
+
   // === ESSAY: How To Never Look Back ===
   "emigration": ["/story_how-to-never-look-back.txt"],
   "immigration": ["/story_how-to-never-look-back.txt"],
@@ -517,6 +532,7 @@ const keywordMap = {
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
       "/film_withnail-and-us.txt",
+      "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
