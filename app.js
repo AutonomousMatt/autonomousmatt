@@ -294,6 +294,20 @@ const keywordMap = {
   "louvre": ["/film_the-orchestra.txt"],
   "conductor": ["/film_the-orchestra.txt"],
 
+      // === TV: Alan Bennett Talking Heads ===
+  "alan bennett": ["/tv_alan-bennett-talking-heads.txt"],
+   "british": ["/tv_alan-bennett-talking-heads.txt"],
+   "pandemic": ["/tv_alan-bennett-talking-heads.txt"],
+   "playwright": ["/tv_alan-bennett-talking-heads.txt"],
+   "solitude": ["/tv_alan-bennett-talking-heads.txt"],
+   "ordinary": ["/tv_alan-bennett-talking-heads.txt"],
+   "elderly": ["/tv_alan-bennett-talking-heads.txt"],
+   "tension": ["/tv_alan-bennett-talking-heads.txt"],
+   "longing": ["/tv_alan-bennett-talking-heads.txt"],
+   "grace": ["/tv_alan-bennett-talking-heads.txt"],
+  "talking heads": ["/tv_alan-bennett-talking-heads.txt"],
+  "monologue": ["/tv_alan-bennett-talking-heads.txt"],
+
       // === FILM: Joy Division Control ===
   "joy division": ["/film_joy-division-control.txt"],
   "ian curtis": ["/film_joy-division-control.txt"],
@@ -550,6 +564,7 @@ const keywordMap = {
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
       "/tv_eastenders.txt",
+      "/tv_alan-bennett-talking-heads.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
   }
