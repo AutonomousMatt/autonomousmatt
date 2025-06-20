@@ -304,7 +304,7 @@ const keywordMap = {
   "new york times": ["/story_the-ten-year-cycle.txt"],
   "penn": ["/story_the-ten-year-cycle.txt"],
 
-    // === ESSAY: The Boy With The Dip ===
+    // === STORY: The Boy With The Dip ===
   "fable": ["/story_the-boy-with-the-dip.txt"],
   "shark": ["/story_the-boy-with-the-dip.txt"],
   "mortality": ["/story_the-boy-with-the-dip.txt"],
@@ -316,6 +316,19 @@ const keywordMap = {
   "beach": ["/story_the-boy-with-the-dip.txt"],
   "surrealism": ["/story_the-boy-with-the-dip.txt"],
   "heroism": ["/story_the-boy-with-the-dip.txt"],
+
+      // === STORY: Eyes Up ===
+  "rumination": ["/story_eyes-up.txt"],
+  "grief": ["/story_eyes-up.txt"],
+  "memory": ["/story_eyes-up.txt"],
+  "loss": ["/story_eyes-up.txt"],
+  "walking": ["/story_eyes-up.txt"],
+  "solitude": ["/story_eyes-up.txt"],
+  "anxiety": ["/story_eyes-up.txt"],
+  "nostalgia": ["/story_eyes-up.txt"],
+  "relfection": ["/story_eyes-up.txt"],
+  "new york": ["/story_eyes-up.txt"],
+  "estrangement": ["/story_eyes-up.txt"],
 
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
@@ -399,6 +412,7 @@ const keywordMap = {
       "/story_twenty-things-in-twenty-years.txt",
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
+      "/story_eyes-up.txt",
       "/story_how-to-never-look-back.txt",
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
