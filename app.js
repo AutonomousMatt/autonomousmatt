@@ -203,6 +203,20 @@ const keywordMap = {
     "barry lyndon": ["/film_barry-lyndon.txt"],
   "thackeray": ["/film_barry-lyndon.txt"],
 
+  // === FILM: Betty Blue ===
+  "betty blue": ["/film_betty-blue.txt"],
+  "french": ["/film_betty-blue.txt"],
+  "mental illness": ["/film_betty-blue.txt"],
+  "beatrice dalle": ["/film_betty-blue.txt"],
+  "zorg": ["/film_betty-blue.txt"],
+  "romance": ["/film_betty-blue.txt"],
+  "unstable": ["/film_betty-blue.txt"],
+  "emotional": ["/film_betty-blue.txt"],
+  "love": ["/film_betty-blue.txt"],
+  "tragedy": ["/film_betty-blue.txt"],
+  "1980s": ["/film_betty-blue.txt"],
+  "intensity": ["/film_betty-blue.txt"],
+  
   // === FILM: Kes & Cathy Come Home ===
   "kes": ["/film_kes.txt"],
   "tragedy": ["/film_kes.txt"],
@@ -649,6 +663,7 @@ const keywordMap = {
     matchedFiles = [
       "/film_blue.txt",
       "/film_beanpole.txt",
+      "/film_betty-blue.txt",
       "/film_career-girls.txt",
       "/film_high-fidelity.txt",
       "/film_rope.txt",
