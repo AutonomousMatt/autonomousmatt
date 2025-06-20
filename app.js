@@ -446,6 +446,20 @@ const keywordMap = {
   "mental health": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
   "work": ["/story_freedom-of-the-worst-day-of-your-life.txt"],
 
+  // === ESSAY: Geek Culture ===
+  "geek": ["/essay_geek-culture.txt"],
+  "comic book": ["/essay_geek-culture.txt"],
+  "comics": ["/essay_geek-culture.txt"],
+  "avengers": ["/essay_geek-culture.txt"],
+  "star wars": ["/essay_geek-culture.txt"],
+  "marvel": ["/essay_geek-culture.txt"],
+  "dc": ["/essay_geek-culture.txt"],
+  "mcu": ["/essay_geek-culture.txt"],
+  "burnout": ["/essay_geek-culture.txt"],
+  "overload": ["/essay_geek-culture.txt"],
+  "fandom": ["/essay_geek-culture.txt"],
+  "streaming": ["/essay_geek-culture.txt"],
+  
   // === ESSAY: The Ten-Year Cycle ===
   "cycle": ["/story_the-ten-year-cycle.txt"],
   "decades": ["/story_the-ten-year-cycle.txt"],
@@ -658,6 +672,7 @@ const keywordMap = {
       "/film_withnail-and-us.txt",
       "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
+      "/essay_geek-culture.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
