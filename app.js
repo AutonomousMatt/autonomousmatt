@@ -233,6 +233,26 @@ const keywordMap = {
   "munchausen": ["/film_baron-munchausen.txt"],
   "comedy": ["/film_baron-munchausen.txt"],
 
+    // === FILM: What Star Wars Means To Me ===
+  "star wars": ["/film_what-star-wars-means-to-me.txt"],
+  "george lucas": ["/film_what-star-wars-means-to-me.txt"],
+  "fandom": ["/film_what-star-wars-means-to-me.txt"],
+  "nostalgia": ["/film_what-star-wars-means-to-me.txt"],
+  "toys": ["/film_what-star-wars-means-to-me.txt"],
+  "childhood": ["/film_what-star-wars-means-to-me.txt"],
+  "collecting": ["/film_what-star-wars-means-to-me.txt"],
+  "trading cards": ["/film_what-star-wars-means-to-me.txt"],
+  "action figures": ["/film_what-star-wars-means-to-me.txt"],
+  "luke skywalker": ["/film_what-star-wars-means-to-me.txt"],
+  "darth vader": ["/film_what-star-wars-means-to-me.txt"],
+  "han solo": ["/film_what-star-wars-means-to-me.txt"],
+  "new hope": ["/film_what-star-wars-means-to-me.txt"],
+  "rogue one": ["/film_what-star-wars-means-to-me.txt"],
+  "empire": ["/film_what-star-wars-means-to-me.txt"],
+  "force": ["/film_what-star-wars-means-to-me.txt"],
+  "science fiction": ["/film_what-star-wars-means-to-me.txt"],
+  
+
     // === FILM: The Orchestra ===
   "Rybczynski": ["/film_the-orchestra.txt"],
   "Zbigniew": ["/film_the-orchestra.txt"],
@@ -453,6 +473,7 @@ const keywordMap = {
       "/film_seeing-and-saw.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
+      "/film_what-star-wars-means-to-me.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_journey-from-there-to-here.txt",
