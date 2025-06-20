@@ -324,7 +324,23 @@ const keywordMap = {
   "cold": ["/film_beanpole.txt"],
   "hospital": ["/film_beanpole.txt"],
   "leningrad": ["/film_beanpole.txt"],
-  
+
+        // === FILM: Career Girls ===
+  "mike leigh": ["/film_career-girls.txt"],
+  "college": ["/film_career-girls.txt"],
+  "university": ["/film_career-girls.txt"],
+  "kingston": ["/film_career-girls.txt"],
+  "friends": ["/film_career-girls.txt"],
+  "friendship": ["/film_career-girls.txt"],
+  "career": ["/film_career-girls.txt"],
+  "girls": ["/film_career-girls.txt"],
+  "adulthood": ["/film_career-girls.txt"],
+  "british": ["/film_career-girls.txt"],
+  "reuniting": ["/film_career-girls.txt"],
+  "1990s": ["/film_career-girls.txt"],
+  "london": ["/film_career-girls.txt"],
+  "mental health": ["/film_career-girls.txt"],
+  "nostalgia": ["/film_career-girls.txt"],
 
       // === TV: Alan Bennett Talking Heads ===
   "alan bennett": ["/tv_alan-bennett-talking-heads.txt"],
@@ -591,6 +607,7 @@ const keywordMap = {
     matchedFiles = [
       "/film_blue.txt",
       "/film_beanpole.txt",
+      "/film_career-girls.txt",
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
       "/film_napoleon.txt",
