@@ -390,6 +390,20 @@ const keywordMap = {
   "gaming": ["/gaming_fragging-the-competition.txt"],
   "videogame": ["/gaming_fragging-the-competition.txt"],
 
+          // === GAMING: Destiny Enigmatic Nine ===
+  "destiny": ["/gaming_destiny-enigmatic-nine.txt"],
+  "bungie": ["/gaming_destiny-enigmatic-nine.txt"],
+  "nine": ["/gaming_destiny-enigmatic-nine.txt"],
+  "cosmology": ["/gaming_destiny-enigmatic-nine.txt"],
+  "lore": ["/gaming_destiny-enigmatic-nine.txt"],
+  "creation": ["/gaming_destiny-enigmatic-nine.txt"],
+  "egypt": ["/gaming_destiny-enigmatic-nine.txt"],
+  "game design": ["/gaming_destiny-enigmatic-nine.txt"],
+  "videogame": ["/gaming_destiny-enigmatic-nine.txt"],
+  "edge of fate": ["/gaming_destiny-enigmatic-nine.txt"],
+  "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
+  "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
+
           // === GAMING: Live Die Eat Cheat ===
   "gaming": ["/gaming_live-die-eat-cheat.txt"],
   "nintendo": ["/gaming_live-die-eat-cheat.txt"],
@@ -489,6 +503,7 @@ const keywordMap = {
       "/film_the-orchestra.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/gaming_fragging-the-competition.txt",
+      "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
