@@ -233,6 +233,19 @@ const keywordMap = {
   "munchausen": ["/film_baron-munchausen.txt"],
   "comedy": ["/film_baron-munchausen.txt"],
 
+    // === FILM: Detective Blanc Donut Theory ===
+  "daniel craig": ["/film_detective-blanc-donut-theory.txt"],
+  "whodunnit": ["/film_detective-blanc-donut-theory.txt"],
+  "murder": ["/film_detective-blanc-donut-theory.txt"],
+  "mystery": ["/film_detective-blanc-donut-theory.txt"],
+  "donut": ["/film_detective-blanc-donut-theory.txt"],
+  "detective": ["/film_detective-blanc-donut-theory.txt"],
+  "blanc": ["/film_detective-blanc-donut-theory.txt"],
+  "amazon": ["/film_detective-blanc-donut-theory.txt"],
+  "agatha christie": ["/film_detective-blanc-donut-theory.txt"],
+  "metafiction": ["/film_detective-blanc-donut-theory.txt"],
+  "knives out": ["/film_detective-blanc-donut-theory.txt"],
+
     // === FILM: What Star Wars Means To Me ===
   "star wars": ["/film_what-star-wars-means-to-me.txt"],
   "george lucas": ["/film_what-star-wars-means-to-me.txt"],
@@ -470,6 +483,7 @@ const keywordMap = {
       "/film_kubrick-napoleon.txt",
       "/film_barry-lyndon.txt",
       "/film_kes.txt",
+      "/film_detective-blanc-donut-theory.txt",
       "/film_seeing-and-saw.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
