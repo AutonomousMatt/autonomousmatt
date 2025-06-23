@@ -82,6 +82,30 @@
         color: #ffffff;
         text-decoration: underline;
       }
+
+      .question-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+      }
+
+      .question-buttons button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .question-buttons button:hover {
+        background-color: #444;
+        transform: scale(1.03);
+      }
     </style>
   </head>
   <body>
@@ -89,21 +113,34 @@
     <br />
     <button onclick="ask()">Ask</button>
 
-<div id="thinking-indicator" style="display:none; font-style:italic; color:#ffffff; margin:10px 0;">
-  Matt is thinking<span id="thinking-dots"></span>
-</div>
-    
+    <!-- Pre-defined question buttons -->
+    <div class="question-buttons">
+      <button onclick="askPredefinedQuestion('Who is Matt Shadbolt?')">Who is Matt Shadbolt?</button>
+      <button onclick="askPredefinedQuestion('Where did Matt go to school?')">Where did Matt go to school?</button>
+      <button onclick="askPredefinedQuestion('What was his PhD thesis about?')">What was his PhD thesis about?</button>
+    </div>
+
+    <div id="thinking-indicator" style="display:none; font-style:italic; color:#ffffff; margin:10px 0;">
+      Matt is thinking<span id="thinking-dots"></span>
+    </div>
+
     <div id="response-container"></div>
 
     <div class="disclaimer">
-      <br> <br> Just like the Real/Matt, Autonomous/Matt can make mistakes. <br> <br> Not getting the results you're looking for?
+      <br><br> Just like the Real/Matt, Autonomous/Matt can make mistakes. <br><br>
+      Not getting the results you're looking for?
       <a href="https://www.autonomousmatt.com/contact" target="_blank" rel="noopener noreferrer">Reach out</a>.
-
-<br><br>
-
-v1.0 /Ceremony
+      <br><br>
+      v1.0 /Ceremony
     </div>
 
     <script src="app.js"></script>
+    <script>
+      function askPredefinedQuestion(question) {
+        const promptInput = document.getElementById("prompt");
+        promptInput.value = question;
+        ask();
+      }
+    </script>
   </body>
 </html>
