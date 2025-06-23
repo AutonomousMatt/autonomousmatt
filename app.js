@@ -693,6 +693,21 @@ const keywordMap = {
   "survival": ["/gaming_last-of-us-trauma-loss.txt"],
   "videogame": ["/gaming_last-of-us-trauma-loss.txt"],
 
+        // === STORY: Archive Whisperer Part Two ===
+  "archive": ["/story_archive-whisperer-part-two.txt"],
+  "secret": ["/story_archive-whisperer-part-two.txt"],
+  "occult": ["/story_archive-whisperer-part-two.txt"],
+  "manhattan": ["/story_archive-whisperer-part-two.txt"],
+  "brooklyn": ["/story_archive-whisperer-part-two.txt"],
+  "subway": ["/story_archive-whisperer-part-two.txt"],
+  "cryptography": ["/story_archive-whisperer-part-two.txt"],
+  "puzzle": ["/story_archive-whisperer-part-two.txt"],
+  "symbolism": ["/story_archive-whisperer-part-two.txt"],
+  "fiction": ["/story_archive-whisperer-part-two.txt"],
+  "numerical": ["/story_archive-whisperer-part-two.txt"],
+  "code": ["/story_archive-whisperer-part-two.txt"],
+  "whisperer": ["/story_archive-whisperer-part-two.txt"],
+  
         // === STORY: Archive Whisperer Part One ===
   "archive": ["/story_archive-whisperer-part-one.txt"],
   "library": ["/story_archive-whisperer-part-one.txt"],
@@ -904,6 +919,7 @@ const keywordMap = {
       "/story_beware-the-owls-herald.txt",
       "/story_fumbling-from-within.txt",
       "/story_archive-whisperer-part-one.txt",
+      "/story_archive-whisperer-part-two.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
