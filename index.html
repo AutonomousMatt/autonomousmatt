@@ -47,7 +47,6 @@
 
       .question-buttons {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
@@ -119,9 +118,10 @@
 
     <!-- Pre-defined question buttons -->
     <div class="question-buttons">
-      <button onclick="askPredefinedQuestion('Why did the British lose the battle of Isandlwana?')">Why did the British lose the battle of Isandlwana?</button>
-      <button onclick="askPredefinedQuestion('What happened to Kubrick\\'s film about Napoleon?')">What happened to Kubrick's film about Napoleon?</button>
-      <button onclick="askPredefinedQuestion('What\\'s it like to move to America from London?')">What's it like to move to America from London?</button>
+      <button onclick="submitPredefined('Why did the British lose the battle of Isandlwana?')">Why did the British lose the battle of Isandlwana?</button>
+      <button onclick="submitPredefined('What happened to Kubrick\\'s film about Napoleon?')">What happened to Kubrick's film about Napoleon?</button>
+      <button onclick="submitPredefined('What makes a great product manager?')">What makes a great product manager?</button>
+      <button onclick="submitPredefined('What\\'s it like to move to America from London?')">What's it like to move to America from London?</button>
     </div>
 
     <div id="thinking-indicator" style="display:none; font-style:italic; color:#ffffff; margin:10px 0;">
@@ -140,36 +140,10 @@
 
     <script src="app.js"></script>
     <script>
-      async function askQuestion(text) {
-        const responseContainer = document.getElementById("response-container");
+      function submitPredefined(text) {
         const promptInput = document.getElementById("prompt");
-        const thinkingIndicator = document.getElementById("thinking-indicator");
-
-        // Show thinking
-        thinkingIndicator.style.display = "block";
-        responseContainer.innerHTML = "";
-
-        // Lowercase version of the input for keyword mapping
-        const prompt = text.trim().toLowerCase();
         promptInput.value = text;
-
-        // Call your app logic here — for now just simulate a response
-        // You can modify this if you're calling a real backend
-        setTimeout(() => {
-          responseContainer.innerHTML = `<div class="response-block show">Response for: ${text}</div>`;
-          thinkingIndicator.style.display = "none";
-        }, 1200);
-      }
-
-      function askPredefinedQuestion(question) {
-        askQuestion(question);
-      }
-
-      function ask() {
-        const input = document.getElementById("prompt").value.trim();
-        if (input) {
-          askQuestion(input);
-        }
+        ask(); // call your app.js ask() as if user typed it
       }
     </script>
   </body>
