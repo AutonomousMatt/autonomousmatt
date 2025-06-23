@@ -531,6 +531,20 @@ const keywordMap = {
   "overload": ["/essay_geek-culture.txt"],
   "fandom": ["/essay_geek-culture.txt"],
   "streaming": ["/essay_geek-culture.txt"],
+
+    // === ACADEMIC: Bubonic Plague in East Asia ===
+  "bubonic": ["/academic_bubonic-plague.txt"],
+  "plague": ["/academic_bubonic-plague.txt"],
+  "death": ["/academic_bubonic-plague.txt"],
+  "china": ["/academic_bubonic-plague.txt"],
+  "asia": ["/academic_bubonic-plague.txt"],
+  "debt": ["/academic_bubonic-plague.txt"],
+  "bondage": ["/academic_bubonic-plague.txt"],
+  "slavery": ["/academic_bubonic-plague.txt"],
+  "pandemic": ["/academic_bubonic-plague.txt"],
+  "servile": ["/academic_bubonic-plague.txt"],
+  "black swan": ["/academic_bubonic-plague.txt"],
+  "penn": ["/academic_bubonic-plague.txt"],
   
   // === ESSAY: The Ten-Year Cycle ===
   "cycle": ["/story_the-ten-year-cycle.txt"],
@@ -765,6 +779,7 @@ const keywordMap = {
       "/film_dancer-in-the-dark.txt",
       "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
+      "/academic_bubonic-plague.txt",
       "/essay_geek-culture.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
