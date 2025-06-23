@@ -443,6 +443,20 @@ const keywordMap = {
   "talking heads": ["/tv_alan-bennett-talking-heads.txt"],
   "monologue": ["/tv_alan-bennett-talking-heads.txt"],
 
+      // === FILM: My Last Film ===
+  "zia anger": ["/film_my-last-film.txt"],
+  "indie": ["/film_my-last-film.txt"],
+  "independent": ["/film_my-last-film.txt"],
+  "short film": ["/film_my-last-film.txt"],
+  "arquette": ["/film_my-last-film.txt"],
+  "williamsburg": ["/film_my-last-film.txt"],
+  "hollywood": ["/film_my-last-film.txt"],
+  "catharsis": ["/film_my-last-film.txt"],
+  "abuse": ["/film_my-last-film.txt"],
+  "integrity": ["/film_my-last-film.txt"],
+  "rosanna": ["/film_my-last-film.txt"],
+  "my last film": ["/film_my-last-film.txt"],
+  
       // === FILM: Joy Division Control ===
   "joy division": ["/film_joy-division-control.txt"],
   "ian curtis": ["/film_joy-division-control.txt"],
@@ -879,6 +893,7 @@ const keywordMap = {
       "/film_beanpole.txt",
       "/film_betty-blue.txt",
       "/film_career-girls.txt",
+      "/film_my-last-film.txt",
       "/film_high-fidelity.txt",
       "/film_rope.txt",
       "/film_baron-munchausen.txt",
