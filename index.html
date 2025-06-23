@@ -27,7 +27,7 @@
         font-family: 'Roboto', sans-serif;
       }
 
-      button {
+      button.main-ask {
         margin-top: 20px;
         padding: 20px 40px;
         font-size: 20px;
@@ -40,35 +40,35 @@
         transition: background-color 0.3s ease, transform 0.2s ease;
       }
 
-      button:hover {
+      button.main-ask:hover {
         background-color: red;
         transform: scale(1.02);
       }
 
       .question-buttons {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
-        justify-content: center;
+        margin-top: 24px;
         gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
       }
 
       .question-buttons button {
-        flex: 1 0 auto;
-        white-space: nowrap;
-        padding: 10px 16px;
+        flex: 1 0 calc(25% - 10px);
+        background-color: #fff;
+        color: #333;
         font-size: 14px;
-        background-color: #333;
+        font-weight: 500;
+        padding: 14px 16px;
         border: none;
-        border-radius: 6px;
-        color: #fff;
+        border-radius: 14px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        transition: all 0.2s ease;
       }
 
       .question-buttons button:hover {
-        background-color: #444;
+        background-color: #f2f2f2;
         transform: scale(1.03);
       }
 
@@ -109,21 +109,48 @@
         color: #ffffff;
         text-decoration: underline;
       }
+
+      #thinking-indicator {
+        display: none;
+        font-style: italic;
+        color: #ffffff;
+        margin: 20px 0;
+        font-size: 14px;
+      }
+
+      #thinking-indicator span {
+        animation: dots 1.5s steps(3, end) infinite;
+      }
+
+      @keyframes dots {
+        0%, 20% {
+          content: "";
+        }
+        40% {
+          content: ".";
+        }
+        60% {
+          content: "..";
+        }
+        100% {
+          content: "...";
+        }
+      }
     </style>
   </head>
   <body>
     <textarea id="prompt" placeholder="Example: How can I learn to listen more effectively?" rows="4" cols="50" autofocus></textarea>
     <br />
-    <button onclick="ask()">Ask</button>
+    <button class="main-ask" onclick="ask()">Ask</button>
 
-    <!-- Pre-defined question buttons -->
     <div class="question-buttons">
-      <button onclick="submitPredefined('Why did the British lose the battle of Isandlwana?')">Why did the British lose the battle of Isandlwana?</button>
+      <button onclick="submitPredefined('Who is Matt Welsh?')">Who is Matt Welsh?</button>
+      <button onclick="submitPredefined('Where did Matt go to school?')">Where did Matt go to school?</button>
+      <button onclick="submitPredefined('What was his PhD thesis about?')">What was his PhD thesis about?</button>
+      <button onclick="submitPredefined('What makes a great product manager?')">What makes a great product manager?</button>
     </div>
 
-    <div id="thinking-indicator" style="display:none; font-style:italic; color:#ffffff; margin:10px 0;">
-      Matt is thinking<span id="thinking-dots"></span>
-    </div>
+    <div id="thinking-indicator">Matt is thinking<span id="thinking-dots">...</span></div>
 
     <div id="response-container"></div>
 
@@ -140,8 +167,19 @@
       function submitPredefined(text) {
         const promptInput = document.getElementById("prompt");
         promptInput.value = text;
-        ask(); // call your app.js ask() as if user typed it
+        ask();
       }
+
+      // Optional: You can uncomment and place this in app.js if not already handled
+      /*
+      function showThinking() {
+        document.getElementById("thinking-indicator").style.display = "block";
+      }
+
+      function hideThinking() {
+        document.getElementById("thinking-indicator").style.display = "none";
+      }
+      */
     </script>
   </body>
 </html>
