@@ -676,6 +676,22 @@ const keywordMap = {
   "plague": ["/gaming_wrath-of-the-machine.txt"],
   "alchemy": ["/gaming_wrath-of-the-machine.txt"],
   "technology": ["/gaming_wrath-of-the-machine.txt"],
+
+        // === GAMING: Last of Us Trauma Loss ===
+  "last of us": ["/gaming_last-of-us-trauma-loss.txt"],
+  "trauma": ["/gaming_last-of-us-trauma-loss.txt"],
+  "loss": ["/gaming_last-of-us-trauma-loss.txt"],
+  "grief": ["/gaming_last-of-us-trauma-loss.txt"],
+  "emotion": ["/gaming_last-of-us-trauma-loss.txt"],
+  "storytelling": ["/gaming_last-of-us-trauma-loss.txt"],
+  "death": ["/gaming_last-of-us-trauma-loss.txt"],
+  "heartache": ["/gaming_last-of-us-trauma-loss.txt"],
+  "longing": ["/gaming_last-of-us-trauma-loss.txt"],
+  "family": ["/gaming_last-of-us-trauma-loss.txt"],
+  "impact": ["/gaming_last-of-us-trauma-loss.txt"],
+  "suffer": ["/gaming_last-of-us-trauma-loss.txt"],
+  "survival": ["/gaming_last-of-us-trauma-loss.txt"],
+  "videogame": ["/gaming_last-of-us-trauma-loss.txt"],
   
         // === GAMING: Quake 2 Tournament Review ===
   "quake": ["/gaming_fragging-the-competition.txt"],
@@ -847,6 +863,7 @@ const keywordMap = {
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
       "/gaming_eris-morn.txt",
+      "/gaming_last-of-us-trauma-loss.txt",
       "/gaming_wrath-of-the-machine.txt",
       "/gaming_joel-ellie-bond.txt",
       "/gaming_live-die-eat-cheat.txt",
