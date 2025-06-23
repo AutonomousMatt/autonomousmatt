@@ -662,6 +662,21 @@ const keywordMap = {
   "new york": ["/story_eyes-up.txt"],
   "estrangement": ["/story_eyes-up.txt"],
 
+        // === GAMING: Wrath of the Machine ===
+  "destiny": ["/gaming_wrath-of-the-machine.txt"],
+  "wrath": ["/gaming_wrath-of-the-machine.txt"],
+  "raid": ["/gaming_wrath-of-the-machine.txt"],
+  "siva": ["/gaming_wrath-of-the-machine.txt"],
+  "splicer": ["/gaming_wrath-of-the-machine.txt"],
+  "nanotech": ["/gaming_wrath-of-the-machine.txt"],
+  "bioethics": ["/gaming_wrath-of-the-machine.txt"],
+  "machine": ["/gaming_wrath-of-the-machine.txt"],
+  "videogame": ["/gaming_wrath-of-the-machine.txt"],
+  "programmable": ["/gaming_wrath-of-the-machine.txt"],
+  "plague": ["/gaming_wrath-of-the-machine.txt"],
+  "alchemy": ["/gaming_wrath-of-the-machine.txt"],
+  "technology": ["/gaming_wrath-of-the-machine.txt"],
+  
         // === GAMING: Quake 2 Tournament Review ===
   "quake": ["/gaming_fragging-the-competition.txt"],
   "quakeadelica": ["/gaming_fragging-the-competition.txt"],
@@ -832,6 +847,7 @@ const keywordMap = {
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
       "/gaming_eris-morn.txt",
+      "/gaming_wrath-of-the-machine.txt",
       "/gaming_joel-ellie-bond.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
