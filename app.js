@@ -350,6 +350,21 @@ const keywordMap = {
   "road movie": ["/film_nomadland.txt"],
   "nevada": ["/film_nomadland.txt"],
   "amazon": ["/film_nomadland.txt"],
+
+      // === FILM: Naked ===
+  "naked": ["/film_naked.txt"],
+  "thewlis": ["/film_naked.txt"],
+  "bleak": ["/film_naked.txt"],
+  "nihilism": ["/film_naked.txt"],
+  "bar code": ["/film_naked.txt"],
+  "violence": ["/film_naked.txt"],
+  "class": ["/film_naked.txt"],
+  "homeless": ["/film_naked.txt"],
+  "abuse": ["/film_naked.txt"],
+  "conspiracy": ["/film_naked.txt"],
+  "protagonist": ["/film_naked.txt"],
+  "london": ["/film_naked.txt"],
+  "mike leigh": ["/film_high-naked.txt"],
   
       // === FILM: High Fidelity ===
   "high fidelity": ["/film_high-fidelity.txt"],
@@ -906,6 +921,7 @@ const keywordMap = {
       "/film_long-good-friday.txt",
       "/film_stalker.txt",
       "/film_virgin-suicides.txt",
+      "/film_naked.txt",
       "/film_kubrick-napoleon.txt",
       "/film_barry-lyndon.txt",
       "/film_kes.txt",
