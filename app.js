@@ -546,7 +546,22 @@ const keywordMap = {
   "black swan": ["/academic_bubonic-plague.txt"],
   "penn": ["/academic_bubonic-plague.txt"],
 
+    // === GAMING: Joel and Ellie Bond ===
+  "last of us": ["/gaming_joel-ellie-bond.txt"],
+  "joel": ["/gaming_joel-ellie-bond.txt"],
+  "ellie": ["/gaming_joel-ellie-bond.txt"],
+  "videogame": ["/gaming_joel-ellie-bond.txt"],
+  "trauma": ["/gaming_joel-ellie-bond.txt"],
+  "daughter": ["/gaming_joel-ellie-bond.txt"],
+  "relationship": ["/gaming_joel-ellie-bond.txt"],
+  "emotion": ["/gaming_joel-ellie-bond.txt"],
+  "clicker": ["/gaming_joel-ellie-bond.txt"],
+  "bloater": ["/gaming_joel-ellie-bond.txt"],
+  "loss": ["/gaming_joel-ellie-bond.txt"],
+  "connection": ["/gaming_joel-ellie-bond.txt"],
+  "pedro pascal": ["/gaming_joel-ellie-bond.txt"],
 
+  
     // === GAMING: Eris Morn ===
   "destiny": ["/gaming_eris-morn.txt"],
   "eris": ["/gaming_eris-morn.txt"],
@@ -802,6 +817,7 @@ const keywordMap = {
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
       "/gaming_eris-morn.txt",
+      "/gaming_joel-ellie-bond.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
       "/story_fumbling-from-within.txt",
