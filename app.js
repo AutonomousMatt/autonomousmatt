@@ -689,6 +689,20 @@ const keywordMap = {
   "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
   "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
 
+          // === GAMING: Last of Us Female Characters ===
+  "last of us": ["/gaming_last-of-us-female.txt"],
+  "ellie": ["/gaming_last-of-us-female.txt"],
+  "female": ["/gaming_last-of-us-female.txt"],
+  "tess": ["/gaming_last-of-us-female.txt"],
+  "marlene": ["/gaming_last-of-us-female.txt"],
+  "naughty dog": ["/gaming_last-of-us-female.txt"],
+  "gender": ["/gaming_last-of-us-female.txt"],
+  "storytelling": ["/gaming_last-of-us-female.txt"],
+  "druckman": ["/gaming_last-of-us-female.txt"],
+  "representation": ["/gaming_last-of-us-female.txt"],
+  "clicker": ["/gaming_last-of-us-female.txt"],
+  "heroine": ["/gaming_last-of-us-female.txt"],
+  
           // === GAMING: Death Stranding ===
   "kojima": ["/gaming_death-stranding.txt"],
   "death stranding": ["/gaming_death-stranding.txt"],
@@ -814,6 +828,7 @@ const keywordMap = {
       "/academic_bubonic-plague.txt",
       "/essay_geek-culture.txt",
       "/gaming_fragging-the-competition.txt",
+      "/gaming_last-of-us-female.txt",
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
       "/gaming_eris-morn.txt",
