@@ -692,6 +692,22 @@ const keywordMap = {
   "suffer": ["/gaming_last-of-us-trauma-loss.txt"],
   "survival": ["/gaming_last-of-us-trauma-loss.txt"],
   "videogame": ["/gaming_last-of-us-trauma-loss.txt"],
+
+        // === STORY: Archive Whisperer Part One ===
+  "archive": ["/story_archive-whisperer-part-one.txt"],
+  "library": ["/story_archive-whisperer-part-one.txt"],
+  "borges": ["/story_archive-whisperer-part-one.txt"],
+  "new york": ["/story_archive-whisperer-part-one.txt"],
+  "urban legend": ["/story_archive-whisperer-part-one.txt"],
+  "historical fiction": ["/story_archive-whisperer-part-one.txt"],
+  "secret society": ["/story_archive-whisperer-part-one.txt"],
+  "henry darger": ["/story_archive-whisperer-part-one.txt"],
+  "central park": ["/story_archive-whisperer-part-one.txt"],
+  "mystery": ["/story_archive-whisperer-part-one.txt"],
+  "myth": ["/story_archive-whisperer-part-one.txt"],
+  "ghost": ["/story_archive-whisperer-part-one.txt"],
+  "whisperer": ["/story_archive-whisperer-part-one.txt"],
+
   
         // === GAMING: Quake 2 Tournament Review ===
   "quake": ["/gaming_fragging-the-competition.txt"],
@@ -887,6 +903,7 @@ const keywordMap = {
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
       "/story_fumbling-from-within.txt",
+      "/story_archive-whisperer-part-one.txt",
       "/story_journey-from-there-to-here.txt",
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
