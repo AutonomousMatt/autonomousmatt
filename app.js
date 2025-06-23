@@ -720,6 +720,24 @@ const keywordMap = {
   "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
   "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
 
+          // === STORY: Pierced through the heart ===
+  "friends": ["/story_pierced-through-the-heart.txt"],
+  "ache": ["/story_pierced-through-the-heart.txt"],
+  "estrangement": ["/story_pierced-through-the-heart.txt"],
+  "memory": ["/story_pierced-through-the-heart.txt"],
+  "nostalgia": ["/story_pierced-through-the-heart.txt"],
+  "ruminate": ["/story_pierced-through-the-heart.txt"],
+  "distance": ["/story_pierced-through-the-heart.txt"],
+  "anxiety": ["/story_pierced-through-the-heart.txt"],
+  "relationships": ["/story_pierced-through-the-heart.txt"],
+  "childhood": ["/story_pierced-through-the-heart.txt"],
+  "scatter": ["/story_pierced-through-the-heart.txt"],
+  "reconnect": ["/story_pierced-through-the-heart.txt"],
+  "lurking": ["/story_pierced-through-the-heart.txt"],
+  "longing": ["/story_pierced-through-the-heart.txt"],
+  "missed": ["/story_pierced-through-the-heart.txt"],
+
+  
           // === GAMING: Last of Us Female Characters ===
   "last of us": ["/gaming_last-of-us-female.txt"],
   "ellie": ["/gaming_last-of-us-female.txt"],
@@ -879,6 +897,7 @@ const keywordMap = {
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
       "/story_eyes-up.txt",
+      "/story_pierced-through-the-heart.txt",
       "/story_how-to-never-look-back.txt",
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
