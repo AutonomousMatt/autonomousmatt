@@ -545,6 +545,23 @@ const keywordMap = {
   "servile": ["/academic_bubonic-plague.txt"],
   "black swan": ["/academic_bubonic-plague.txt"],
   "penn": ["/academic_bubonic-plague.txt"],
+
+
+    // === GAMING: Eris Morn ===
+  "destiny": ["/gaming_eris-morn.txt"],
+  "eris": ["/gaming_eris-morn.txt"],
+  "hive": ["/gaming_eris-morn.txt"],
+  "taken": ["/gaming_eris-morn.txt"],
+  "lore": ["/gaming_eris-morn.txt"],
+  "videogame": ["/gaming_eris-morn.txt"],
+  "bungie": ["/gaming_eris-morn.txt"],
+  "oryx": ["/gaming_eris-morn.txt"],
+  "dreadnaught": ["/gaming_eris-morn.txt"],
+  "blindfold": ["/gaming_eris-morn.txt"],
+  "sorrows": ["/gaming_eris-morn.txt"],
+  "savathun": ["/gaming_eris-morn.txt"],
+
+  
   
   // === ESSAY: The Ten-Year Cycle ===
   "cycle": ["/story_the-ten-year-cycle.txt"],
@@ -784,6 +801,7 @@ const keywordMap = {
       "/gaming_fragging-the-competition.txt",
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
+      "/gaming_eris-morn.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
       "/story_fumbling-from-within.txt",
