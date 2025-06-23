@@ -955,6 +955,12 @@ const keywordMap = {
     ];
   }
 
+  
+document.getElementById("thinking-indicator").style.display = "block";
+// [run your fetch or processing]
+document.getElementById("thinking-indicator").style.display = "none";
+
+  
   const block = document.createElement("div");
   block.className = "response-block";
 
