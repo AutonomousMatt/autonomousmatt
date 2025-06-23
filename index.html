@@ -135,13 +135,41 @@
       v1.0 /Ceremony
     </div>
 
-    <script src="app.js"></script>
-    <script>
-      function askPredefinedQuestion(question) {
-        const promptInput = document.getElementById("prompt");
-        promptInput.value = question;
-        ask();
-      }
-    </script>
+<script>
+  async function askQuestion(text) {
+    const responseContainer = document.getElementById("response-container");
+    const promptInput = document.getElementById("prompt");
+    const thinkingIndicator = document.getElementById("thinking-indicator");
+
+    // Show thinking
+    thinkingIndicator.style.display = "block";
+    responseContainer.innerHTML = "";
+
+    // Send prompt to your app logic
+    const prompt = text.trim().toLowerCase();
+    promptInput.value = text;
+
+    // Call your existing backend logic (modify if needed)
+    // Simulate output — replace this with your actual fetching logic
+    setTimeout(() => {
+      responseContainer.innerHTML = `<div class="response-block show">Response for: ${text}</div>`;
+      thinkingIndicator.style.display = "none";
+    }, 1200);
+  }
+
+  // Triggered by predefined buttons
+  function askPredefinedQuestion(question) {
+    askQuestion(question);
+  }
+
+  // Triggered by manual user input
+  function ask() {
+    const input = document.getElementById("prompt").value.trim();
+    if (input) {
+      askQuestion(input);
+    }
+  }
+</script>
+
   </body>
 </html>
