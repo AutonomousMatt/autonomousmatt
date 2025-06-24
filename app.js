@@ -989,6 +989,20 @@ const keywordMap = {
   "representation": ["/gaming_last-of-us-female.txt"],
   "clicker": ["/gaming_last-of-us-female.txt"],
   "heroine": ["/gaming_last-of-us-female.txt"],
+
+          // === ESSAY: Best Decisions ===
+  "decision": ["/essay_best-decisions.txt"],
+  "conan": ["/essay_best-decisions.txt"],
+  "consequence": ["/essay_best-decisions.txt"],
+  "nbc": ["/essay_best-decisions.txt"],
+  "career": ["/essay_best-decisions.txt"],
+  "product": ["/essay_best-decisions.txt"],
+  "advice": ["/essay_best-decisions.txt"],
+  "kindness": ["/essay_best-decisions.txt"],
+  "resilience": ["/essay_best-decisions.txt"],
+  "setback": ["/essay_best-decisions.txt"],
+  "professional": ["/essay_best-decisions.txt"],
+  "growth": ["/essay_best-decisions.txt"],
   
           // === GAMING: Death Stranding ===
   "kojima": ["/gaming_death-stranding.txt"],
@@ -1121,6 +1135,7 @@ const keywordMap = {
       "/film_what-star-wars-means-to-me.txt",
       "/academic_bubonic-plague.txt",
       "/essay_geek-culture.txt",
+      "/essay_best-decisions.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_last-of-us-female.txt",
       "/gaming_supermassive.txt",
