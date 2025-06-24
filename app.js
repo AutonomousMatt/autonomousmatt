@@ -322,6 +322,21 @@ const keywordMap = {
   "decision": ["/film_sophies-choice.txt"],
   "ethics": ["/film_sophieschoice.txt"],
 
+        // === FILM: Leaving Las Vegas ===
+  "las vegas": ["/film_leaving-las-vegas.txt"],
+  "nic cage": ["/film_leaving-las-vegas.txt"],
+  "strip": ["/film_leaving-las-vegas.txt"],
+  "alcohol": ["/film_leaving-las-vegas.txt"],
+  "drink": ["/film_leaving-las-vegas.txt"],
+  "desert": ["/film_leaving-las-vegas.txt"],
+  "gambling": ["/film_leaving-las-vegas.txt"],
+  "nevada": ["/film_leaving-las-vegas.txt"],
+  "sadness": ["/film_leaving-las-vegas.txt"],
+  "suicide": ["/film_leaving-las-vegas.txt"],
+  "death": ["/film_leaving-las-vegas.txt"],
+  "prostitution": ["/film_leaving-las-vegas.txt"],
+  "loneliness": ["/film_leaving-las-vegas.txt"],
+  
         // === FILM: Paris Texas ===
   "paris": ["/film_paris-texas.txt"],
   "texas": ["/film_paris-texas.txt"],
@@ -946,6 +961,7 @@ const keywordMap = {
       "/film_blue.txt",
       "/film_beanpole.txt",
       "/film_betty-blue.txt",
+      "/film_leaving-las-vegas.txt",
       "/film_career-girls.txt",
       "/film_my-last-film.txt",
       "/film_high-fidelity.txt",
