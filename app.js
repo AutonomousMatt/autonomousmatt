@@ -839,7 +839,24 @@ const keywordMap = {
   "gaming": ["/gaming_fragging-the-competition.txt"],
   "videogame": ["/gaming_fragging-the-competition.txt"],
 
-          // === TV: Only Murders In The Building ===
+           // === FILM: Once Upon A Time In The West ===
+  "spaghetti": ["/film_once-upon-a-time-in-the-west.txt"],
+  "western": ["/film_once-upon-a-time-in-the-west.txt"],
+  "leone": ["/film_once-upon-a-time-in-the-west.txt"],
+  "cowboy": ["/film_once-upon-a-time-in-the-west.txt"],
+  "railroad": ["/film_once-upon-a-time-in-the-west.txt"],
+  "revenge": ["/film_once-upon-a-time-in-the-west.txt"],
+  "charles bronson": ["/film_once-upon-a-time-in-the-west.txt"],
+  "henry fonda": ["/film_once-upon-a-time-in-the-west.txt"],
+  "old west": ["/film_once-upon-a-time-in-the-west.txt"],
+  "duster": ["/film_once-upon-a-time-in-the-west.txt"],
+  "italian": ["/film_once-upon-a-time-in-the-west.txt"],
+  "classic cinema": ["/film_once-upon-a-time-in-the-west.txt"],
+  "prospector": ["/film_once-upon-a-time-in-the-west.txt"],
+  "immigrant": ["/film_once-upon-a-time-in-the-west.txt"],
+  
+  
+  // === TV: Only Murders In The Building ===
   "hulu": ["/tv_only-murders-in-the-building.txt"],
   "murder": ["/tv_only-murders-in-the-building.txt"],
   "upper west side": ["/tv_only-murders-in-the-building.txt"],
@@ -1021,6 +1038,7 @@ const keywordMap = {
       "/film_fire-walk-with-me.txt",
       "/film_silence.txt",
       "/film_sophies-choice.txt",
+      "/film_once-upon-a-time-in-the-west.txt",
       "/film_legacy-of-zulu-dawn.txt",
       "/film_the-orchestra.txt",
       "/film_withnail-and-us.txt",
