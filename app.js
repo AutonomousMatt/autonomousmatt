@@ -960,6 +960,21 @@ const keywordMap = {
   "longing": ["/story_pierced-through-the-heart.txt"],
   "missed": ["/story_pierced-through-the-heart.txt"],
 
+            // === STORY: What Have I Done ===
+  "what have i done": ["/story_what-have-i-done.txt"],
+  "displacement": ["/story_what-have-i-done.txt"],
+  "philadelphia": ["/story_what-have-i-done.txt"],
+  "identity": ["/story_what-have-i-done.txt"],
+  "memory": ["/story_what-have-i-done.txt"],
+  "nostalgia": ["/story_what-have-i-done.txt"],
+  "new york": ["/story_what-have-i-done.txt"],
+  "london": ["/story_what-have-i-done.txt"],
+  "restlessness": ["/story_what-have-i-done.txt"],
+  "adaptation": ["/story_what-have-i-done.txt"],
+  "culture": ["/story_what-have-i-done.txt"],
+  "assimilation": ["/story_what-have-i-done.txt"],
+  "language": ["/story_what-have-i-done.txt"],
+  "immigration": ["/story_what-have-i-done.txt"],
   
           // === GAMING: Last of Us Female Characters ===
   "last of us": ["/gaming_last-of-us-female.txt"],
@@ -1124,6 +1139,7 @@ const keywordMap = {
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
       "/story_i-remember.txt",
+      "/story_what-have-i-done.txt",
       "/story_first-in-coach.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
