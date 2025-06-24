@@ -530,6 +530,19 @@ const keywordMap = {
   "integrity": ["/film_my-last-film.txt"],
   "rosanna": ["/film_my-last-film.txt"],
   "my last film": ["/film_my-last-film.txt"],
+
+      // === FILM: Puzzle ===
+  "jigsaw": ["/film_puzzle.txt"],
+  "competition": ["/film_puzzle.txt"],
+  "romance": ["/film_puzzle.txt"],
+  "east village": ["/film_puzzle.txt"],
+  "manhattan": ["/film_puzzle.txt"],
+  "pieces": ["/film_puzzle.txt"],
+  "family": ["/film_puzzle.txt"],
+  "affair": ["/film_puzzle.txt"],
+  "solve": ["/film_puzzle.txt"],
+  "finished": ["/film_puzzle.txt"],
+  "puzzle": ["/film_puzzle.txt"],
   
       // === FILM: Joy Division Control ===
   "joy division": ["/film_joy-division-control.txt"],
@@ -1078,6 +1091,7 @@ const keywordMap = {
       "/film_kes.txt",
       "/film_detective-blanc-donut-theory.txt",
       "/film_seeing-and-saw.txt",
+      "/film_puzzle.txt",
       "/film_nomadland.txt",
       "/film_paris-texas.txt",
       "/film_fire-walk-with-me.txt",
