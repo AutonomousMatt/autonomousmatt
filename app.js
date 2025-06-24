@@ -722,6 +722,20 @@ const keywordMap = {
   "cultural": ["/story_i-remember.txt"],
   "stories": ["/story_i-remember.txt"],
   "seventies": ["/story_i-remember.txt"],
+
+       // === TV: Twilight Zone ===
+  "twilight zone": ["/tv_twilight-zone.txt"],
+  "rod serling": ["/tv_twilight-zone.txt"],
+  "classic": ["/tv_twilight-zone.txt"],
+  "television": ["/tv_twilight-zone.txt"],
+  "cbs": ["/tv_twilight-zone.txt"],
+  "science fiction": ["/tv_twilight-zone.txt"],
+  "mystery": ["/tv_twilight-zone.txt"],
+  "black and white": ["/tv_twilight-zone.txt"],
+  "surreal": ["/tv_twilight-zone.txt"],
+  "weird": ["/tv_twilight-zone.txt"],
+  "twist": ["/tv_twilight-zone.txt"],
+  "moral": ["/tv_twilight-zone.txt"],
   
        // === STORY: Fumbling From Within ===
   "cleveland": ["/story_fumbling-from-within.txt"],
@@ -1043,6 +1057,7 @@ const keywordMap = {
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
       "/tv_eastenders.txt",
+      "/tv_twilight-zone.txt",
       "/tv_only-murders-in-the-building.txt",
       "/tv_alan-bennett-talking-heads.txt",
       "/talk_destiny-habituation-tactics.txt"
