@@ -790,6 +790,21 @@ const keywordMap = {
   "gaming": ["/gaming_fragging-the-competition.txt"],
   "videogame": ["/gaming_fragging-the-competition.txt"],
 
+          // === TV: Only Murders In The Building ===
+  "hulu": ["/tv_only-murders-in-the-building.txt"],
+  "murder": ["/tv_only-murders-in-the-building.txt"],
+  "upper west side": ["/tv_only-murders-in-the-building.txt"],
+  "steve martin": ["/tv_only-murders-in-the-building.txt"],
+  "selena gomez": ["/tv_only-murders-in-the-building.txt"],
+  "martin short": ["/tv_only-murders-in-the-building.txt"],
+  "mystery": ["/tv_only-murders-in-the-building.txt"],
+  "comedy": ["/tv_only-murders-in-the-building.txt"],
+  "manhattan": ["/tv_only-murders-in-the-building.txt"],
+  "whodunnit": ["/tv_only-murders-in-the-building.txt"],
+  "theater": ["/tv_only-murders-in-the-building.txt"],
+  "streaming": ["/tv_only-murders-in-the-building.txt"],
+
+  
           // === GAMING: Destiny Enigmatic Nine ===
   "destiny": ["/gaming_destiny-enigmatic-nine.txt"],
   "bungie": ["/gaming_destiny-enigmatic-nine.txt"],
@@ -991,6 +1006,7 @@ const keywordMap = {
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
       "/tv_eastenders.txt",
+      "/tv_only-murders-in-the-building.txt",
       "/tv_alan-bennett-talking-heads.txt",
       "/talk_destiny-habituation-tactics.txt"
     ];
