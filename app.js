@@ -723,6 +723,22 @@ const keywordMap = {
   "stories": ["/story_i-remember.txt"],
   "seventies": ["/story_i-remember.txt"],
 
+       // === TV: Up Series ===
+  "up": ["/tv_up.txt"],
+  "class": ["/tv_up.txt"],
+  "growing up": ["/tv_up.txt"],
+  "children": ["/tv_up.txt"],
+  "adulthood": ["/tv_up.txt"],
+  "marriage": ["/tv_up.txt"],
+  "career": ["/tv_up.txt"],
+  "family": ["/tv_up.txt"],
+  "opportunity": ["/tv_up.txt"],
+  "resilience": ["/tv_up.txt"],
+  "homeless": ["/tv_up.txt"],
+  "life": ["/tv_up.txt"],
+  "experience": ["/tv_up.txt"],
+  "apted": ["/tv_up.txt"],
+  
        // === TV: Twilight Zone ===
   "twilight zone": ["/tv_twilight-zone.txt"],
   "rod serling": ["/tv_twilight-zone.txt"],
@@ -1091,6 +1107,7 @@ const keywordMap = {
       "/story_the-boy-with-the-dip.txt",
       "/story_on-surviving-why-im-still-here.txt",
       "/tv_eastenders.txt",
+      "/tv_up.txt",
       "/tv_twilight-zone.txt",
       "/tv_only-murders-in-the-building.txt",
       "/tv_alan-bennett-talking-heads.txt",
