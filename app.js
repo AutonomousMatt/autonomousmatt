@@ -870,6 +870,21 @@ const keywordMap = {
   "theater": ["/tv_only-murders-in-the-building.txt"],
   "streaming": ["/tv_only-murders-in-the-building.txt"],
 
+          // === GAMING: Supermassive Studios ===
+  "supermassive": ["/gaming_supermassive.txt"],
+  "quicktime": ["/gaming_supermassive.txt"],
+  "videogame": ["/gaming_supermassive.txt"],
+  "non linear": ["/gaming_supermassive.txt"],
+  "choose": ["/gaming_supermassive.txt"],
+  "adventure": ["/gaming_supermassive.txt"],
+  "until dawn": ["/gaming_supermassive.txt"],
+  "dark pictures": ["/gaming_supermassive.txt"],
+  "little hope": ["/gaming_supermassive.txt"],
+  "decision": ["/gaming_supermassive.txt"],
+  "mystery": ["/gaming_supermassive.txt"],
+  "murder": ["/gaming_supermassive.txt"],
+  "consequence": ["/gaming_supermassive.txt"],
+  "outcome": ["/gaming_supermassive.txt"],
   
           // === GAMING: Destiny Enigmatic Nine ===
   "destiny": ["/gaming_destiny-enigmatic-nine.txt"],
@@ -1049,6 +1064,7 @@ const keywordMap = {
       "/essay_geek-culture.txt",
       "/gaming_fragging-the-competition.txt",
       "/gaming_last-of-us-female.txt",
+      "/gaming_supermassive.txt",
       "/gaming_destiny-enigmatic-nine.txt",
       "/gaming_death-stranding.txt",
       "/gaming_eris-morn.txt",
