@@ -916,6 +916,20 @@ const keywordMap = {
   "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
   "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
 
+          // === STORY: First In Coach ===
+  "coach": ["/story_first-in-coach.txt"],
+  "plane": ["/story_first-in-coach.txt"],
+  "class": ["/story_first-in-coach.txt"],
+  "poison": ["/story_first-in-coach.txt"],
+  "harvest": ["/story_first-in-coach.txt"],
+  "ai": ["/story_first-in-coach.txt"],
+  "artificial intelligence": ["/story_first-in-coach.txt"],
+  "dystopia": ["/story_first-in-coach.txt"],
+  "speculative fiction": ["/story_first-in-coach.txt"],
+  "horror": ["/story_first-in-coach.txt"],
+  "entropy": ["/story_first-in-coach.txt"],
+  "language": ["/story_first-in-coach.txt"],
+  
           // === STORY: Pierced through the heart ===
   "friends": ["/story_pierced-through-the-heart.txt"],
   "ache": ["/story_pierced-through-the-heart.txt"],
@@ -1096,6 +1110,7 @@ const keywordMap = {
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
       "/story_i-remember.txt",
+      "/story_first-in-coach.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
       "/story_twenty-things-in-twenty-years.txt",
