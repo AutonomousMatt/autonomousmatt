@@ -914,6 +914,24 @@ const keywordMap = {
   "theater": ["/tv_only-murders-in-the-building.txt"],
   "streaming": ["/tv_only-murders-in-the-building.txt"],
 
+
+          // === ACADEMIC: Russian thirst for reinvention ===
+  "pelevin": ["/academic_russian-thirst-for-reinvention.txt"],
+  "tatarsky": ["/academic_russian-thirst-for-reinvention.txt"],
+  "russia": ["/academic_russian-thirst-for-reinvention.txt"],
+  "advertising": ["/academic_russian-thirst-for-reinvention.txt"],
+  "nationalism": ["/academic_russian-thirst-for-reinvention.txt"],
+  "homo zapiens": ["/academic_russian-thirst-for-reinvention.txt"],
+  "reincarnation": ["/academic_russian-thirst-for-reinvention.txt"],
+  "truth": ["/academic_russian-thirst-for-reinvention.txt"],
+  "propaganda": ["/academic_russian-thirst-for-reinvention.txt"],
+  "symbolism": ["/academic_russian-thirst-for-reinvention.txt"],
+  "media": ["/academic_russian-thirst-for-reinvention.txt"],
+  "satire": ["/academic_russian-thirst-for-reinvention.txt"],
+  "conflict": ["/academic_russian-thirst-for-reinvention.txt"],
+  "soviet": ["/academic_russian-thirst-for-reinvention.txt"],
+
+  
           // === GAMING: Supermassive Studios ===
   "supermassive": ["/gaming_supermassive.txt"],
   "quicktime": ["/gaming_supermassive.txt"],
@@ -1179,6 +1197,7 @@ const keywordMap = {
       "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/academic_bubonic-plague.txt",
+      "/academic_russian-thirst-for-reinvention.txt",
       "/academic_grieftech-investors.txt",
       "/essay_geek-culture.txt",
       "/essay_best-decisions.txt",
