@@ -720,6 +720,23 @@ const keywordMap = {
   "locked": ["/story_beware-the-owls-herald.txt"],
   "puzzle": ["/story_beware-the-owls-herald.txt"],
 
+       // === STORY: Conquerors of space ===
+  "space": ["/story_conquerors-of-space.txt"],
+  "laika": ["/story_conquerors-of-space.txt"],
+  "dog": ["/story_conquerors-of-space.txt"],
+  "monkey": ["/story_conquerors-of-space.txt"],
+  "sacrifice": ["/story_conquerors-of-space.txt"],
+  "pressure": ["/story_conquerors-of-space.txt"],
+  "dread": ["/story_conquerors-of-space.txt"],
+  "wait": ["/story_conquerors-of-space.txt"],
+  "isolation": ["/story_conquerors-of-space.txt"],
+  "forgotten": ["/story_conquerors-of-space.txt"],
+  "flaw": ["/story_conquerors-of-space.txt"],
+  "design": ["/story_conquerors-of-space.txt"],
+  "abyss": ["/story_conquerors-of-space.txt"],
+  "race": ["/story_conquerors-of-space.txt"],
+  "agony": ["/story_conquerors-of-space.txt"],
+  
        // === STORY: I Remember ===
   "remember": ["/story_i-remember.txt"],
   "memoir": ["/story_i-remember.txt"],
@@ -1229,6 +1246,7 @@ const keywordMap = {
       "/story_beware-the-owls-herald.txt",
       "/story_galaxy-without-hope.txt",
       "/story_fumbling-from-within.txt",
+      "/story_conquerors-of-space.txt",
       "/story_archive-whisperer-part-one.txt",
       "/story_archive-whisperer-part-two.txt",
       "/story_journey-from-there-to-here.txt",
