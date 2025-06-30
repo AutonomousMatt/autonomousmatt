@@ -766,7 +766,7 @@ const keywordMap = {
   "twist": ["/tv_twilight-zone.txt"],
   "moral": ["/tv_twilight-zone.txt"],
 
-       // === STORY: Fumbling From Within ===
+       // === STORY: Galaxy without hope ===
   "star wars": ["/story_galaxy-without-hope.txt"],
   "death star": ["/story_galaxy-without-hope.txt"],
   "luke skywalker": ["/story_galaxy-without-hope.txt"],
@@ -944,6 +944,21 @@ const keywordMap = {
   "dlc": ["/gaming_destiny-enigmatic-nine.txt"],
   "seasonal": ["/gaming_destiny-enigmatic-nine.txt"],
 
+          // === ACADEMIC: Grieftech Investors ===
+  "grief": ["/academic_grieftech-investors.txt"],
+  "ai": ["/academic_grieftech-investors.txt"],
+  "grieftech": ["/academic_grieftech-investors.txt"],
+  "loss": ["/academic_grieftech-investors.txt"],
+  "avatar": ["/academic_grieftech-investors.txt"],
+  "humanity": ["/academic_grieftech-investors.txt"],
+  "death": ["/academic_grieftech-investors.txt"],
+  "essence": ["/academic_grieftech-investors.txt"],
+  "consequence": ["/academic_grieftech-investors.txt"],
+  "discrimination": ["/academic_grieftech-investors.txt"],
+  "future": ["/academic_grieftech-investors.txt"],
+  "technology": ["/academic_grieftech-investors.txt"],
+
+  
           // === STORY: First In Coach ===
   "coach": ["/story_first-in-coach.txt"],
   "plane": ["/story_first-in-coach.txt"],
@@ -1149,6 +1164,7 @@ const keywordMap = {
       "/film_joy-division-control.txt",
       "/film_what-star-wars-means-to-me.txt",
       "/academic_bubonic-plague.txt",
+      "/academic_grieftech-investors.txt",
       "/essay_geek-culture.txt",
       "/essay_best-decisions.txt",
       "/gaming_fragging-the-competition.txt",
