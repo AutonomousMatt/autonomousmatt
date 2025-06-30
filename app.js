@@ -991,6 +991,21 @@ const keywordMap = {
   "tale": ["/story_astonishing-tales-of-the-sea.txt"],
   "eclipse": ["/story_astonishing-tales-of-the-sea.txt"],
 
+            // === STORY: Barnacled ===
+  "memory": ["/story_barnacled.txt"],
+  "nostalgia": ["/story_barnacled.txt"],
+  "britpop": ["/story_barnacled.txt"],
+  "aging": ["/story_barnacled.txt"],
+  "sea": ["/story_barnacled.txt"],
+  "davy jones": ["/story_barnacled.txt"],
+  "remembrance": ["/story_barnacled.txt"],
+  "narrative": ["/story_barnacled.txt"],
+  "sleep": ["/story_barnacled.txt"],
+  "pillow": ["/story_barnacled.txt"],
+  "oxford": ["/story_barnacled.txt"],
+  "ocean": ["/story_barnacled.txt"],
+  "sailor": ["/story_barnacled.txt"],
+  "drown": ["/story_barnacled.txt"],
   
           // === STORY: First In Coach ===
   "coach": ["/story_first-in-coach.txt"],
@@ -1229,6 +1244,7 @@ const keywordMap = {
       "/story_how-to-be-a-great-product-manager.txt",
       "/story_life-in-art.txt",
       "/story_eyes-up.txt",
+      "/story_barnacled.txt",
       "/story_pierced-through-the-heart.txt",
       "/story_how-to-never-look-back.txt",
       "/story_the-boy-with-the-dip.txt",
