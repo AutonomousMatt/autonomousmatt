@@ -765,6 +765,21 @@ const keywordMap = {
   "weird": ["/tv_twilight-zone.txt"],
   "twist": ["/tv_twilight-zone.txt"],
   "moral": ["/tv_twilight-zone.txt"],
+
+       // === STORY: Fumbling From Within ===
+  "star wars": ["/story_galaxy-without-hope.txt"],
+  "death star": ["/story_galaxy-without-hope.txt"],
+  "luke skywalker": ["/story_galaxy-without-hope.txt"],
+  "x wing": ["/story_galaxy-without-hope.txt"],
+  "tie fighter": ["/story_galaxy-without-hope.txt"],
+  "new hope": ["/story_galaxy-without-hope.txt"],
+  "yavin": ["/story_galaxy-without-hope.txt"],
+  "empire": ["/story_galaxy-without-hope.txt"],
+  "exhaist port": ["/story_galaxy-without-hope.txt"],
+  "laser": ["/story_galaxy-without-hope.txt"],
+  "rebel": ["/story_galaxy-without-hope.txt"],
+  "jedi": ["/story_galaxy-without-hope.txt"],
+
   
        // === STORY: Fumbling From Within ===
   "cleveland": ["/story_fumbling-from-within.txt"],
@@ -1147,6 +1162,7 @@ const keywordMap = {
       "/gaming_joel-ellie-bond.txt",
       "/gaming_live-die-eat-cheat.txt",
       "/story_beware-the-owls-herald.txt",
+      "/story_galaxy-without-hope.txt",
       "/story_fumbling-from-within.txt",
       "/story_archive-whisperer-part-one.txt",
       "/story_archive-whisperer-part-two.txt",
