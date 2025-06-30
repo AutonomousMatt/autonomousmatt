@@ -958,6 +958,21 @@ const keywordMap = {
   "future": ["/academic_grieftech-investors.txt"],
   "technology": ["/academic_grieftech-investors.txt"],
 
+          // === STORY: Astonishing tales of the sea ===
+  "sea": ["/story_astonishing-tales-of-the-sea.txt"],
+  "storms": ["/story_astonishing-tales-of-the-sea.txt"],
+  "isandlwana": ["/story_astonishing-tales-of-the-sea.txt"],
+  "zulu": ["/story_astonishing-tales-of-the-sea.txt"],
+  "shipwreck": ["/story_astonishing-tales-of-the-sea.txt"],
+  "heroism": ["/story_astonishing-tales-of-the-sea.txt"],
+  "fitzgerald": ["/story_astonishing-tales-of-the-sea.txt"],
+  "catastrophe": ["/story_astonishing-tales-of-the-sea.txt"],
+  "last words": ["/story_astonishing-tales-of-the-sea.txt"],
+  "earthquake": ["/story_astonishing-tales-of-the-sea.txt"],
+  "astonishing": ["/story_astonishing-tales-of-the-sea.txt"],
+  "tale": ["/story_astonishing-tales-of-the-sea.txt"],
+  "eclipse": ["/story_astonishing-tales-of-the-sea.txt"],
+
   
           // === STORY: First In Coach ===
   "coach": ["/story_first-in-coach.txt"],
@@ -1186,6 +1201,7 @@ const keywordMap = {
       "/story_when-you-fell-asleep-forever.txt",
       "/story_the-ten-year-cycle.txt",
       "/story_i-remember.txt",
+      "/story_astonishing-tales-of-the-sea.txt",
       "/story_what-have-i-done.txt",
       "/story_first-in-coach.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
