@@ -1182,6 +1182,21 @@ const keywordMap = {
     "cheat code": ["/gaming_live-die-eat-cheat.txt"],
   "videogame": ["/gaming_live-die-eat-cheat.txt"],
 
+        // === ACADEMIC: Daoism Gendered Priesthood ===
+  "daoism": ["/academic_daoism-gendered-priesthood.txt"],
+  "gender": ["/academic_daoism-gendered-priesthood.txt"],
+  "priest": ["/academic_daoism-gendered-priesthood.txt"],
+  "confucianism": ["/academic_daoism-gendered-priesthood.txt"],
+  "laozi": ["/academic_daoism-gendered-priesthood.txt"],
+  "buddhism": ["/academic_daoism-gendered-priesthood.txt"],
+  "korea": ["/academic_daoism-gendered-priesthood.txt"],
+  "taiwan": ["/academic_daoism-gendered-priesthood.txt"],
+  "nuns": ["/academic_daoism-gendered-priesthood.txt"],
+  "ordination": ["/academic_daoism-gendered-priesthood.txt"],
+  "clergy": ["/academic_daoism-gendered-priesthood.txt"],
+  "catholic": ["/academic_daoism-gendered-priesthood.txt"],
+  "christianity": ["/academic_daoism-gendered-priesthood.txt"],
+
       // === STORY: Controlled Loneliness ===
   "control": ["/story_controlled-loneliness.txt"],
   "loneliness": ["/story_controlled-loneliness.txt"],
@@ -1340,6 +1355,7 @@ const keywordMap = {
       "/academic_russian-thirst-for-reinvention.txt",
       "/academic_brexit-field-guide.txt",
       "/academic_grieftech-investors.txt",
+      "/academic_daoism-gendered-priesthood.txt",
       "/academic_buddhism-durable-refuge.txt",
       "/academic_lightning-and-ledger.txt",
       "/essay_geek-culture.txt",
