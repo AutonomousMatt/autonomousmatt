@@ -1226,6 +1226,21 @@ const keywordMap = {
   "ghosting": ["/story_courtney.txt"],
   "identity": ["/story_courtney.txt"],
 
+      // === STORY: Dirty Dishes ===
+  "writing": ["/story_dirty-dishes.txt"],
+  "process": ["/story_dirty-dishes.txt"],
+  "anxiety": ["/story_dirty-dishes.txt"],
+  "creative": ["/story_dirty-dishes.txt"],
+  "metaphor": ["/story_dirty-dishes.txt"],
+  "dirty": ["/story_dirty-dishes.txt"],
+  "dishes": ["/story_dirty-dishes.txt"],
+  "catharsis": ["/story_dirty-dishes.txt"],
+  "memory": ["/story_dirty-dishes.txt"],
+  "self reflection": ["/story_dirty-dishes.txt"],
+  "habit": ["/story_dirty-dishes.txt"],
+  "domestic": ["/story_dirty-dishes.txt"],
+  "daily": ["/story_dirty-dishes.txt"],
+
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
   "hospital": ["/story_on-surviving-why-im-still-here.txt"],
@@ -1342,6 +1357,7 @@ const keywordMap = {
       "/story_beware-the-owls-herald.txt",
       "/story_galaxy-without-hope.txt",
       "/story_fumbling-from-within.txt",
+      "/story_dirty-dishes.txt",
       "/story_conquerors-of-space.txt",
       "/story_controlled-loneliness.txt",
       "/story_archive-whisperer-part-one.txt",
