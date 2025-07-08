@@ -1070,6 +1070,22 @@ const keywordMap = {
   "europe": ["/academic_brexit-field-guide.txt"],
   "british": ["/academic_brexit-field-guide.txt"],
 
+                // === ACADEMIC: Buddhism Durable Refuge ===
+  "buddhism": ["/academic_buddhism-durable-refuge.txt"],
+  "dharma": ["/academic_buddhism-durable-refuge.txt"],
+  "sangha": ["/academic_buddhism-durable-refuge.txt"],
+  "faith": ["/academic_buddhism-durable-refuge.txt"],
+  "religious": ["/academic_buddhism-durable-refuge.txt"],
+  "spiritual": ["/academic_buddhism-durable-refuge.txt"],
+  "impermanence": ["/academic_buddhism-durable-refuge.txt"],
+  "suffering": ["/academic_buddhism-durable-refuge.txt"],
+  "refuge": ["/academic_buddhism-durable-refuge.txt"],
+  "intergenerational": ["/academic_buddhism-durable-refuge.txt"],
+  "india": ["/academic_buddhism-durable-refuge.txt"],
+  "hindu": ["/academic_buddhism-durable-refuge.txt"],
+  "sikh": ["/academic_buddhism-durable-refuge.txt"],
+  "durable": ["/academic_buddhism-durable-refuge.txt"],
+
               // === ACADEMIC: Lightning and Ledger ===
   "semiotics": ["/academic_lightning-and-ledger.txt"],
   "identity": ["/academic_lightning-and-ledger.txt"],
@@ -1265,6 +1281,7 @@ const keywordMap = {
       "/academic_russian-thirst-for-reinvention.txt",
       "/academic_brexit-field-guide.txt",
       "/academic_grieftech-investors.txt",
+      "/academic_buddhism-durable-refuge.txt",
       "/academic_lightning-and-ledger.txt",
       "/essay_geek-culture.txt",
       "/essay_best-decisions.txt",
