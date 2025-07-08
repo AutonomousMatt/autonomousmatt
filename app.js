@@ -1055,6 +1055,24 @@ const keywordMap = {
   "longing": ["/story_pierced-through-the-heart.txt"],
   "missed": ["/story_pierced-through-the-heart.txt"],
 
+              // === ACADEMIC: Lightning and Ledger ===
+  "semiotics": ["/academic_lightning-and-ledger.txt"],
+  "identity": ["/academic_lightning-and-ledger.txt"],
+  "lightning": ["/academic_lightning-and-ledger.txt"],
+  "ledger": ["/academic_lightning-and-ledger.txt"],
+  "modular": ["/academic_lightning-and-ledger.txt"],
+  "generative": ["/academic_lightning-and-ledger.txt"],
+  "ai": ["/academic_lightning-and-ledger.txt"],
+  "product management": ["/academic_lightning-and-ledger.txt"],
+  "network": ["/academic_lightning-and-ledger.txt"],
+  "cognitive": ["/academic_lightning-and-ledger.txt"],
+  "vannevar": ["/academic_lightning-and-ledger.txt"],
+  "preservation": ["/academic_lightning-and-ledger.txt"],
+  "archive": ["/academic_lightning-and-ledger.txt"],
+  "digital": ["/academic_lightning-and-ledger.txt"],
+  "seo": ["/academic_lightning-and-ledger.txt"],
+  "branding": ["/academic_lightning-and-ledger.txt"],
+
             // === STORY: What Have I Done ===
   "what have i done": ["/story_what-have-i-done.txt"],
   "displacement": ["/story_what-have-i-done.txt"],
@@ -1231,6 +1249,7 @@ const keywordMap = {
       "/academic_bubonic-plague.txt",
       "/academic_russian-thirst-for-reinvention.txt",
       "/academic_grieftech-investors.txt",
+      "/academic_lightning-and-ledger.txt",
       "/essay_geek-culture.txt",
       "/essay_best-decisions.txt",
       "/gaming_fragging-the-competition.txt",
