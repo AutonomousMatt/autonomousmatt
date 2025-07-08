@@ -1196,6 +1196,20 @@ const keywordMap = {
   "flow": ["/story_controlled-loneliness.txt"],
   "retirement": ["/story_controlled-loneliness.txt"],
 
+      // === STORY: Courtney ===
+  "courtney": ["/story_courtney.txt"],
+  "nomad": ["/story_courtney.txt"],
+  "influencer": ["/story_courtney.txt"],
+  "travel": ["/story_courtney.txt"],
+  "hitchhiker": ["/story_courtney.txt"],
+  "backpack": ["/story_courtney.txt"],
+  "hostel": ["/story_courtney.txt"],
+  "adventure": ["/story_courtney.txt"],
+  "internet": ["/story_courtney.txt"],
+  "disappearance": ["/story_courtney.txt"],
+  "ghosting": ["/story_courtney.txt"],
+  "identity": ["/story_courtney.txt"],
+
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
   "hospital": ["/story_on-surviving-why-im-still-here.txt"],
@@ -1323,6 +1337,7 @@ const keywordMap = {
       "/story_astonishing-tales-of-the-sea.txt",
       "/story_what-have-i-done.txt",
       "/story_first-in-coach.txt",
+      "/story_courtney.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
       "/story_when-work-stops-being-the-work.txt",
       "/story_twenty-things-in-twenty-years.txt",
