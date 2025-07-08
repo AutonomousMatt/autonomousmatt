@@ -1055,6 +1055,21 @@ const keywordMap = {
   "longing": ["/story_pierced-through-the-heart.txt"],
   "missed": ["/story_pierced-through-the-heart.txt"],
 
+                // === ACADEMIC: Brexit Field Guide ===
+  "brexit": ["/academic_brexit-field-guide.txt"],
+  "partisan": ["/academic_brexit-field-guide.txt"],
+  "animosity": ["/academic_brexit-field-guide.txt"],
+  "autonomy": ["/academic_brexit-field-guide.txt"],
+  "sovereign": ["/academic_brexit-field-guide.txt"],
+  "moral": ["/academic_brexit-field-guide.txt"],
+  "reframing": ["/academic_brexit-field-guide.txt"],
+  "leave": ["/academic_brexit-field-guide.txt"],
+  "remain": ["/academic_brexit-field-guide.txt"],
+  "polarization": ["/academic_brexit-field-guide.txt"],
+  "politics": ["/academic_brexit-field-guide.txt"],
+  "europe": ["/academic_brexit-field-guide.txt"],
+  "british": ["/academic_brexit-field-guide.txt"],
+
               // === ACADEMIC: Lightning and Ledger ===
   "semiotics": ["/academic_lightning-and-ledger.txt"],
   "identity": ["/academic_lightning-and-ledger.txt"],
@@ -1248,6 +1263,7 @@ const keywordMap = {
       "/film_what-star-wars-means-to-me.txt",
       "/academic_bubonic-plague.txt",
       "/academic_russian-thirst-for-reinvention.txt",
+      "/academic_brexit-field-guide.txt",
       "/academic_grieftech-investors.txt",
       "/academic_lightning-and-ledger.txt",
       "/essay_geek-culture.txt",
