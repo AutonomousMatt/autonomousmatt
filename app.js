@@ -1182,6 +1182,20 @@ const keywordMap = {
     "cheat code": ["/gaming_live-die-eat-cheat.txt"],
   "videogame": ["/gaming_live-die-eat-cheat.txt"],
 
+      // === STORY: Controlled Loneliness ===
+  "control": ["/story_controlled-loneliness.txt"],
+  "loneliness": ["/story_controlled-loneliness.txt"],
+  "solitude": ["/story_controlled-loneliness.txt"],
+  "writing": ["/story_controlled-loneliness.txt"],
+  "lonely": ["/story_controlled-loneliness.txt"],
+  "quiet": ["/story_controlled-loneliness.txt"],
+  "lighthouse": ["/story_controlled-loneliness.txt"],
+  "creativity": ["/story_controlled-loneliness.txt"],
+  "routine": ["/story_controlled-loneliness.txt"],
+  "reflection": ["/story_controlled-loneliness.txt"],
+  "flow": ["/story_controlled-loneliness.txt"],
+  "retirement": ["/story_controlled-loneliness.txt"],
+
     // === ESSAY: Cancer Survival ===
   "cancer": ["/story_on-surviving-why-im-still-here.txt"],
   "hospital": ["/story_on-surviving-why-im-still-here.txt"],
@@ -1299,6 +1313,7 @@ const keywordMap = {
       "/story_galaxy-without-hope.txt",
       "/story_fumbling-from-within.txt",
       "/story_conquerors-of-space.txt",
+      "/story_controlled-loneliness.txt",
       "/story_archive-whisperer-part-one.txt",
       "/story_archive-whisperer-part-two.txt",
       "/story_journey-from-there-to-here.txt",
