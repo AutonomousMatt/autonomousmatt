@@ -1196,6 +1196,22 @@ const keywordMap = {
   "flow": ["/story_controlled-loneliness.txt"],
   "retirement": ["/story_controlled-loneliness.txt"],
 
+      // === STORY: Crossroads ===
+  "crossroads": ["/story_crossroads.txt"],
+  "grief": ["/story_crossroads.txt"],
+  "loss": ["/story_crossroads.txt"],
+  "sorrow": ["/story_crossroads.txt"],
+  "wires": ["/story_crossroads.txt"],
+  "war": ["/story_crossroads.txt"],
+  "memory": ["/story_crossroads.txt"],
+  "absence": ["/story_crossroads.txt"],
+  "telegraph": ["/story_crossroads.txt"],
+  "surveillance": ["/story_crossroads.txt"],
+  "emotional": ["/story_crossroads.txt"],
+  "distance": ["/story_crossroads.txt"],
+  "road": ["/story_crossroads.txt"],
+  "haunting": ["/story_crossroads.txt"],
+  
       // === STORY: Courtney ===
   "courtney": ["/story_courtney.txt"],
   "nomad": ["/story_courtney.txt"],
@@ -1336,6 +1352,7 @@ const keywordMap = {
       "/story_i-remember.txt",
       "/story_astonishing-tales-of-the-sea.txt",
       "/story_what-have-i-done.txt",
+      "/story_crossroads.txt",
       "/story_first-in-coach.txt",
       "/story_courtney.txt",
       "/story_freedom-of-the-worst-day-of-your-life.txt",
